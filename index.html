@@ -4,23 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoFinder - Get best movies recomendations!</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css" media="screen">
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="./assets/logo-mofinder.png" alt="The movies finder official logo"></a>
+        <a href="index.html"><img class="mofinder-logo" src="./assets/logo-mofinder.png" alt="A logo oficial do Movies Finder"></a>
+        <a href="#" class="hamburguer-menu"><img src="assets/svg-icons/list.svg" alt="Clique para acessar o menu"></a>
 
-        <nav class="menu">
-            <a href="#">Início</a>
-            <a href="#">Como usar</a>
-            <a href="#">Contato</a>
+        <nav class="header-menu"></nav>
+            <a class="header-menu-item" href="#">Início</a>
+            <a class="header-menu-item" href="#">Como usar</a>
+            <a class="header-menu-item" href="#">Contato</a>
         </nav>
 
-        <nav class="side-menu">
-            <a href="#"><img src="./assets/svg-icons/link.svg" alt="Seja redirecionado para meu portfólio"></a>
-            <a href="#"><img src="./assets/svg-icons/linkedin-logo.svg" alt="Clique para ir ao meu perfil do linkedin"></a>
-            <a href="#"><img src="./assets/svg-icons/github-logo.svg" alt="Clique para acessar meu github"></a>
+        <nav class="header-menu">
+            <a class="header-menu-item" href="#"><img src="./assets/svg-icons/link.svg" alt="Seja redirecionado para meu portfólio"></a>
+            <a class="header-menu-item" href="#"><img src="./assets/svg-icons/linkedin-logo.svg" alt="Clique para ir ao meu perfil do linkedin"></a>
+            <a class="header-menu-item" href="#"><img src="./assets/svg-icons/github-logo.svg" alt="Clique para acessar meu github"></a>
         </nav>
     </header>
+
+    <main>
+        <section>
+            <h1>Escolher o filme perfeito não<br>precisa ser difícil..</h1>
+            <p>Consiga recomendações inteligentes com base em nosso banco de dados,<br>nada de grande catálogos! Encontre o filme perfeito agora!</p>
+        
+            <button class="start-tour"><img src="assets/svg-icons/queue.svg" alt="">Vamos lá!</button>
+        </section>
+        
+        <aside>
+            <a class="caret-down" href="#"><img src="assets/svg-icons/caret-down.svg" alt="Clique para navegar para baixo"></a>
+        </aside>
+    </main>
 </body>
 </html>
