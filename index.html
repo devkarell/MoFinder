@@ -8,33 +8,50 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><img class="mofinder-logo" src="./assets/logo-mofinder.png" alt="A logo oficial do Movies Finder"></a>
-        <a href="#" class="hamburguer-menu"><img src="assets/svg-icons/list.svg" alt="Clique para acessar o menu"></a>
+        <a class="mofinder-logo-link" href="index.html"><img id="mofinder-logo-img" src="./assets/logo-mofinder.png" alt="A logo oficial do Movies Finder"></a>
+        <a class="hamburguer-menu-link" href="#"><img id="hamburguer-menu-img" src="assets/svg-icons/list.svg" alt="Clique para acessar o menu"></a>
 
-        <nav class="header-menu"></nav>
-            <a class="header-menu-item" href="#">Início</a>
-            <a class="header-menu-item" href="#">Como usar</a>
-            <a class="header-menu-item" href="#">Contato</a>
-        </nav>
+        <nav>
+            <ul class="page-sections-container">
+                <li><a id="section-link" href="#">Início</a></li>
+                <li><a id="section-link" href="#">Como usar</a></li>
+                <li><a id="section-link" href="#">Contato</a></li>
+            </ul>
 
-        <nav class="header-menu">
-            <a class="header-menu-item" href="#"><img src="./assets/svg-icons/link.svg" alt="Seja redirecionado para meu portfólio"></a>
-            <a class="header-menu-item" href="#"><img src="./assets/svg-icons/linkedin-logo.svg" alt="Clique para ir ao meu perfil do linkedin"></a>
-            <a class="header-menu-item" href="#"><img src="./assets/svg-icons/github-logo.svg" alt="Clique para acessar meu github"></a>
+            <ul class="external-links-container">
+                <li><a id="external-link" href="#"><img src="./assets/svg-icons/link.svg" alt="Seja redirecionado para meu portfólio"></a></li>
+                <li><a id="external-link" href="#"><img src="./assets/svg-icons/linkedin-logo.svg" alt="Clique para ir ao meu perfil do LinkedIn"></a></li>
+                <li><a id="external-link" href="#"><img src="./assets/svg-icons/github-logo.svg" alt="Clique para acessar meu GitHub"></a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h1>Escolher o filme perfeito não<br>precisa ser difícil..</h1>
-            <p>Consiga recomendações inteligentes com base em nosso banco de dados,<br>nada de grande catálogos! Encontre o filme perfeito agora!</p>
-        
-            <button class="start-tour"><img src="assets/svg-icons/queue.svg" alt="">Vamos lá!</button>
+        <section class="mofinder-section-home">
+            <div>
+                <h1>Escolher o filme perfeito não<br>precisa ser difícil..</h1>
+                <p>Consiga recomendações inteligentes com base em nosso banco de dados, nada de grande catálogos! Encontre o filme perfeito agora!</p>
+                <button class="start-tour" type="button">
+                    <img src="assets/svg-icons/queue.svg" alt="">
+                    <p>Vamos lá!</p>
+                </button>
+            </div>
+            
+            <aside>
+                <img class="caret-navigator" src="assets/svg-icons/caret-down.svg" alt="">
+            </aside>
         </section>
-        
-        <aside>
-            <a class="caret-down" href="#"><img src="assets/svg-icons/caret-down.svg" alt="Clique para navegar para baixo"></a>
-        </aside>
+
+        <section class="mofinder-section-checkup">
+            <aside>
+                <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="">
+            </aside>
+            
+            <div>
+                <h1>Então, preparado?!</h1>
+                <p>Para encontrar o filme perfeito você terá que interagir positivamente ou negativamente nas recomendações que vamos te fazer. Esta é uma experiência totalmente personalizada.</p>
+            </div>
+        </section>
     </main>
 </body>
 </html>

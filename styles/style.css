@@ -17,56 +17,121 @@
 body {
     width: 100vw;
     height: 100vh;
+    /* overflow-x: hidden; */
 
     background-color: var(--background-color);
+    background-image: url("../assets/background-cinema-chairs.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
-@media screen and (max-width: 768px) {
+/* Smartphones Media Query */
+@media screen and (max-width: 600px) {
     header {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
-        height: 10vh;
-        width: 100vw;
-        padding-inline: .5rem;
-        position: fixed;
+        width: 100%;
+        height: 10%;
+        padding: .5rem 1rem;
     
         background-color: var(--background-color);
         box-shadow: 0px 0px 30px var(--box-shadow-red);
     }
 
-    .mofinder-logo {
-        height: 3rem;
+    header > nav {
+        display: none;
     }
 
-    .hamburguer-menu {
+    .mofinder-logo-link, #mofinder-logo-img {
+        height: 3.5rem;
+    }
+
+    .hamburguer-menu-link {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex: 0 1 3rem;
-        height: 2.5rem;
+        flex: 0 0 4rem;
+        height: 4rem;
         cursor: pointer;
     }
 
-    .hamburguer-menu > img {
-        flex: auto;
-    }
-
-    .header-menu, .header-menu-item {
-        display: none;
+    #hamburguer-menu-img {
+        flex: 0 0 80%;
     }
 
     main {
         display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 20vh;
-        padding-inline: 1rem;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start ;
+        padding-inline: 3rem;
         width: 100%;
-        height: 100%;
-
+        height: 90%;
         color: white;
+
+        background-image: linear-gradient(to top, var(--background-color) 40%, transparent);
     }
+
+    .mofinder-section-home {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: space-between;
+        margin-top: 10rem;
+        height: 78%;
+    }
+
+    .mofinder-section-home > div > h1 {
+        font-weight: bold;
+        font-size: 3em;
+        text-wrap: wrap;
+        margin-bottom: 1.5rem;
+    }
+
+    .mofinder-section-home > div > p {
+        font-weight: 100;
+        font-size: 1.3em;
+        text-wrap: wrap;
+        margin-bottom: 3rem;
+    }
+
+    .mofinder-section-home > div > .start-tour {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: .5rem 1rem;
+        width: 12rem;
+        margin-inline: auto;
+
+        font-weight: 300;
+        font-size: 1.1em;
+        color: white;
+        text-align: center;
+
+        background-color: transparent;
+        border: 3px solid white;
+        border-radius: 11px;
+        cursor: pointer;
+    }
+
+    .mofinder-section-home > div > .start-tour:hover {
+        transform: translateY(-5px);
+        border-color: var(--hover-btn-red);
+        transition: transform, border-color, .3s;
+    }
+
+    /*
+    .mofinder-section-checkup {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 5rem;
+        height: 90%;
+    }
+    */
 }
