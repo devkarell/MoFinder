@@ -1,137 +1,109 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
     --background-color: #1b1b1b;
-    --box-shadow-red: #521814;
+    --box-shadow-dark: #0e0e0e;
     --hover-btn-red: #eb5148;
 }
 
 body {
     width: 100vw;
-    height: 100vh;
-    /* overflow-x: hidden; */
+    height: 100%;
+    overflow-x: hidden;
 
     background-color: var(--background-color);
     background-image: url("../assets/background-cinema-chairs.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Smartphones Media Query */
-@media screen and (max-width: 600px) {
-    header {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 10%;
-        padding: .5rem 1rem;
-    
-        background-color: var(--background-color);
-        box-shadow: 0px 0px 30px var(--box-shadow-red);
-    }
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    padding: .7rem .5rem;
 
-    header > nav {
-        display: none;
-    }
+    text-align: center;
+    background-color: var(--background-color);
+    box-shadow: 0px 0px 30px var(--box-shadow-dark);
+}
 
-    .mofinder-logo-link, #mofinder-logo-img {
-        height: 3.5rem;
-    }
+header > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    padding-inline: 1rem;
+}
 
-    .hamburguer-menu-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 0 0 4rem;
-        height: 4rem;
-        cursor: pointer;
-    }
+header > nav > ul {
+    display: flex;
+    flex: auto;
+    list-style-type: none;
+}
 
-    #hamburguer-menu-img {
-        flex: 0 0 80%;
-    }
+nav > ul > li {
+    display: inline;
+    margin-inline: 1rem;
+}
 
-    main {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: flex-start ;
-        padding-inline: 3rem;
-        width: 100%;
-        height: 90%;
-        color: white;
+.mofinder-logo-container {
+    height: 100%;
+    text-align: left;
+    flex: 0 1 25%;
+}
 
-        background-image: linear-gradient(to top, var(--background-color) 40%, transparent);
-    }
+.mofinder-logo-container > a, .mofinder-logo-container > a > img {
+    width: auto;
+    height: 100%;
+}
 
-    .mofinder-section-home {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: space-between;
-        margin-top: 10rem;
-        height: 78%;
-    }
+.hamburguer-menu-link {
+    display: none;
+}
 
-    .mofinder-section-home > div > h1 {
-        font-weight: bold;
-        font-size: 3em;
-        text-wrap: wrap;
-        margin-bottom: 1.5rem;
-    }
+.page-sections-container {
+    flex: 0 1 22rem;
+}
 
-    .mofinder-section-home > div > p {
-        font-weight: 100;
-        font-size: 1.3em;
-        text-wrap: wrap;
-        margin-bottom: 3rem;
-    }
+.section-link {
+    font-size: 1em;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+}
 
-    .mofinder-section-home > div > .start-tour {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: .5rem 1rem;
-        width: 12rem;
-        margin-inline: auto;
+.section-link:hover {
+    color: var(--hover-btn-red);
+    transition: color .2s;
+}
 
-        font-weight: 300;
-        font-size: 1.1em;
-        color: white;
-        text-align: center;
+.external-links-container {
+    flex: 0 2 12rem;
+    padding-inline: 0px;
+}
 
-        background-color: transparent;
-        border: 3px solid white;
-        border-radius: 11px;
-        cursor: pointer;
-    }
+.external-links-container > ul {
+    justify-content: space-evenly;
+}
 
-    .mofinder-section-home > div > .start-tour:hover {
-        transform: translateY(-5px);
-        border-color: var(--hover-btn-red);
-        transition: transform, border-color, .3s;
-    }
-
-    /*
-    .mofinder-section-checkup {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: flex-start;
-        margin-top: 5rem;
-        height: 90%;
-    }
-    */
+.external-links-container > ul > li > a, .external-links-container > ul > li > a > img {
+    width: 1.5em;
+    height: 1.5em;
 }

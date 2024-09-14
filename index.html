@@ -3,25 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoFinder - Get best movies recomendations!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./styles/smartphones.css" media="screen and (max-width: 500px)"> </!-->
     <link rel="stylesheet" href="./styles/style.css" media="screen">
+    <title>MoFinder - Get best movies recomendations!</title>
 </head>
 <body>
     <header>
-        <a class="mofinder-logo-link" href="index.html"><img id="mofinder-logo-img" src="./assets/logo-mofinder.png" alt="A logo oficial do Movies Finder"></a>
+        <div class="mofinder-logo-container">
+            <a href="index.html"><img src="./assets/logo-mofinder.png" alt="A logo oficial do Movies Finder"></a>
+        </div>
+        
         <a class="hamburguer-menu-link" href="#"><img id="hamburguer-menu-img" src="assets/svg-icons/list.svg" alt="Clique para acessar o menu"></a>
 
-        <nav>
-            <ul class="page-sections-container">
-                <li><a id="section-link" href="#">Início</a></li>
-                <li><a id="section-link" href="#">Como usar</a></li>
-                <li><a id="section-link" href="#">Contato</a></li>
+        <nav class="page-sections-container">
+            <ul>
+                <li><a class="section-link" href="#">Início</a></li>
+                <li><a class="section-link" href="#">Como usar</a></li>
+                <li><a class="section-link" href="#">Contato</a></li>
             </ul>
+        </nav>
 
-            <ul class="external-links-container">
-                <li><a id="external-link" href="#"><img src="./assets/svg-icons/link.svg" alt="Seja redirecionado para meu portfólio"></a></li>
-                <li><a id="external-link" href="#"><img src="./assets/svg-icons/linkedin-logo.svg" alt="Clique para ir ao meu perfil do LinkedIn"></a></li>
-                <li><a id="external-link" href="#"><img src="./assets/svg-icons/github-logo.svg" alt="Clique para acessar meu GitHub"></a></li>
+        <nav class="external-links-container">
+            <ul>
+                <li><a class="external-link" href="#"><img src="./assets/svg-icons/link.svg" alt="Seja redirecionado para meu portfólio"></a></li>
+                <li><a class="external-link" href="#"><img src="./assets/svg-icons/linkedin-logo.svg" alt="Clique para ir ao meu perfil do LinkedIn"></a></li>
+                <li><a class="external-link" href="#"><img src="./assets/svg-icons/github-logo.svg" alt="Clique para acessar meu GitHub"></a></li>
             </ul>
         </nav>
     </header>
