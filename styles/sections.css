@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+:root {
+    --hover-btn-red: #eb5148;
+}
+
+section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-content: center;
+
+    width: 100%;
+    height: 80vh;
+    margin-top: 10vh;
+    padding-top: 10vh;
+    padding-bottom: 2vh;
+
+    color: white;
+    border: 2px dotted red;
+}
+
+button {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 13rem;
+    height: 3.2rem;
+    padding: 1.6rem .5rem;
+
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 11px;
+    color: white;
+    cursor: pointer;
+
+    font-size: clamp(5px, 1.2vw, 30px);
+    font-weight: 300;
+}
+
+button:hover {
+    border-color: var(--hover-btn-red);
+    transition: border-color .2s;
+}
+
+.mofinder-section-home > div {
+    text-align: start;
+}
+
+aside {
+    text-align: center;
+}
+
+.mofinder-section-home > div > h1 {
+    font-weight: 700;
+    font-size: clamp(30px, 5vw, 65px);
+    margin-bottom: .2em;
+}
+
+.mofinder-section-home > div > p {
+    font-weight: 100;
+    font-size: clamp(10px, 2vw, 30px);
+    margin-bottom: 1.2em;
+    letter-spacing: 1px;
+}
+
+.mofinder-section-checkup {
+    align-items: center;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.mofinder-section-checkup .title-description-help > h1 {
+    font-weight: 700;
+    font-size: clamp(30px, 5vw, 65px);
+    margin-bottom: .2em;
+}
+
+.mofinder-section-checkup .title-description-help > p {
+    font-weight: 100;
+    font-size: clamp(10px, 1.3vw, 30px);
+    margin-bottom: .2em;
+    letter-spacing: 1px;
+}
+
+.mofinder-section-streamapp {
+    align-items: center;
+    text-align: center;
+}
+
+.mofinder-section-streamapp > h1 {
+    font-weight: 700;
+    font-size: clamp(20px, 5vw, 60px);
+}
+
+.mofinder-section-streamapp > .streamingapps-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.streamingapps-list > li {
+    margin-inline: 1rem;
+}
+
+.streamingapps-list > li > img {
+    cursor: pointer;
+}
+
+.streamingapps-list > li > img:hover {
+    transform: translateY(-10px);
+    transition: transform .2s;
+}
+
+.mofinder-section-streamapp > p {
+    font-weight: 100;
+    font-size: clamp(8px, 1.3vw, 20px);
+    color: #b3b3b3;
+    letter-spacing: 1px;
+}
+
+.to-age-ratings-btn {
+    width: 23rem;
+}
+
+.mofinder-section-ratings {
+    align-items: center;
+    text-align: center;
+}
+
+.mofinder-section-ratings > h1 {
+    font-weight: 700;
+    font-size: clamp(20px, 5vw, 60px);
+}
+
+.mofinder-section-ratings > .ratings-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.ratings-list > li {
+    margin-inline: 1rem;
+}
+
+.ratings-list > li > img {
+    cursor: pointer;
+}
+
+.ratings-list > li > img:hover {
+    transform: translateY(-10px);
+    transition: transform .2s;
+}
+
+.mofinder-section-ratings > p {
+    font-weight: 100;
+    font-size: clamp(8px, 1.3vw, 20px);
+    color: #b3b3b3;
+    letter-spacing: 1px;
+}
+
+.to-recommendations-section-btn {
+    width: 21rem;
+}
+
+.mofinder-recommending {
+    margin-bottom: 10vh;
+}

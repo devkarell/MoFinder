@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+:root {
+    --background-color: #1b1b1b;
+    --box-shadow-dark: #0e0e0e;
+    --hover-btn-red: #eb5148;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: .7rem 1rem;
+
+    background-color: var(--background-color);
+    box-shadow: 0px 0px 30px var(--box-shadow-dark);
+}
+
+.mofinder-logo-container {
+    flex: 0 1 128px;
+}
+
+.mofinder-logo-container > a, .mofinder-logo-container > a > img {
+    width: 100%;
+    height: 100%;
+}
+
+.hamburguer-menu-link { display: none; }
+
+header > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > nav > ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+
+.page-sections-container {
+    flex: 0 1 20rem;
+    margin-inline: 2rem;
+}
+
+.section-link {
+    width: 100%;
+    height: 100%;
+    font-size: clamp(8px, 2.5vw, 17px);
+    white-space: nowrap;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+}
+
+.section-link:hover {
+    color: var(--hover-btn-red);
+    transition: color .2s;
+}
+
+.external-links-container {
+    flex: 0 1 128px;
+}
+
+.external-links-container > ul {
+    flex: 0 1 100%;
+}
+
+.external-links-container > ul > li, .external-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

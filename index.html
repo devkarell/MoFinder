@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- My styles -->
     <!-- <link rel="stylesheet" href="./styles/smartphones.css" media="screen and (max-width: 500px)"> </!-->
-    <link rel="stylesheet" href="./styles/style.css" media="screen">
+    <link rel="stylesheet" href="./styles/header.css" media="screen">
+    <link rel="stylesheet" href="./styles/main.css" media="screen">
+    <link rel="stylesheet" href="./styles/sections.css" media="screen">
     <title>MoFinder - Get best movies recomendations!</title>
 </head>
 <body>
@@ -28,9 +34,9 @@
 
         <nav class="external-links-container">
             <ul>
-                <li><a class="external-link" href="#"><img src="./assets/svg-icons/link.svg" alt="Seja redirecionado para meu portfólio"></a></li>
-                <li><a class="external-link" href="#"><img src="./assets/svg-icons/linkedin-logo.svg" alt="Clique para ir ao meu perfil do LinkedIn"></a></li>
-                <li><a class="external-link" href="#"><img src="./assets/svg-icons/github-logo.svg" alt="Clique para acessar meu GitHub"></a></li>
+                <li><a class="external-link" href="#" target="_blank"><img src="./assets/svg-icons/link.svg" alt="Seja redirecionado para meu portfólio"></a></li>
+                <li><a class="external-link" href="#" target="_blank"><img src="./assets/svg-icons/linkedin-logo.svg" alt="Clique para ir ao meu perfil do LinkedIn"></a></li>
+                <li><a class="external-link" href="#" target="_blank"><img src="./assets/svg-icons/github-logo.svg" alt="Clique para acessar meu GitHub"></a></li>
             </ul>
         </nav>
     </header>
@@ -39,27 +45,153 @@
         <section class="mofinder-section-home">
             <div>
                 <h1>Escolher o filme perfeito não<br>precisa ser difícil..</h1>
-                <p>Consiga recomendações inteligentes com base em nosso banco de dados, nada de grande catálogos! Encontre o filme perfeito agora!</p>
-                <button class="start-tour" type="button">
-                    <img src="assets/svg-icons/queue.svg" alt="">
+                <p>Consiga recomendações inteligentes com base em nosso banco de dados,<br>nada de grande catálogos! Encontre o filme perfeito agora!</p>
+                <button class="start-tour-btn" type="button">
+                    <img src="assets/svg-icons/queue.svg" alt="Começar o tour">
                     <p>Vamos lá!</p>
                 </button>
             </div>
             
             <aside>
-                <img class="caret-navigator" src="assets/svg-icons/caret-down.svg" alt="">
+                <img class="caret-navigator" src="assets/svg-icons/caret-down.svg" alt="Seta para navegar para baixo da página">
             </aside>
         </section>
 
         <section class="mofinder-section-checkup">
             <aside>
-                <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="">
+                <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="Seta para cima para ir ao início">
             </aside>
             
-            <div>
+            <div class="title-description-help">
                 <h1>Então, preparado?!</h1>
-                <p>Para encontrar o filme perfeito você terá que interagir positivamente ou negativamente nas recomendações que vamos te fazer. Esta é uma experiência totalmente personalizada.</p>
+                <p>Para encontrar o filme perfeito você terá que interagir positivamente ou negativamente<br>nas recomendações que vamos te fazer. Esta é uma experiência totalmente personalizada.</p>
             </div>
+
+            <article class="steps-help-one">
+                <fieldset>
+                    <legend>#1</legend>
+                    <p>Responda a perguntas básicas sobre o serviço de Streaming favorito e<br>Classificação Indicativa,e nós começaremos a lhe recomendar filmes<br>dinamicamente.</p>
+                </fieldset>
+            </article>
+
+            <article class="steps-help-two">
+                <fieldset>
+                    <legend>#2</legend>
+                    <p>Por meio de “Gostei” ou “Não gostei” o algoritmo irá te recomendar as<br>melhores sugestões para você com base no interesse.</p>
+                </fieldset>
+            </article>
+
+            <button class="start-aplication-btn" type="button">
+                <img src="assets/svg-icons/play.svg" alt="Ícone de começar, se refere para iniciar a experiência">
+                <p>Começar!</p>
+            </button>
+        </section>
+
+        <section class="mofinder-section-streamapp">
+            <h1>Onde quer ser recomendado?</h1>
+
+            <ul class="streamingapps-list">
+                <li><img src="./assets/streaming-apps/logo-netflix.png" alt="Logo da Netflix"></li>
+                <li><img src="./assets/streaming-apps/logo-hbo-max.png" alt="Logo do HBO Max"></li>
+                <li><img src="./assets/streaming-apps/logo-disney-plus.png" alt="Logo do Disney Plus"></li>
+                <li><img src="./assets/streaming-apps/logo-prime-video.png" alt="Logo da Prime Video"></li>
+            </ul>
+
+            <p>*Estes são serviços de entretenimento oficiais e pagos.<br>Demais serviços considerados “piratas” não serão divulgados em nossa plataforma.</p>
+            
+            <button class="to-age-ratings-btn" type="button">
+                <img src="assets/ratings/rating-livre-32.png" alt="Ícone de Classificação Indicativa Livre">
+                <p>Classificações Indicativas</p>
+            </button>
+        </section>
+
+        <section class="mofinder-section-ratings">
+            <h1>Qual sua faixa etária?</h1>
+
+            <ul class="ratings-list">
+                <li><img src="./assets/ratings/rating-livre.png" alt="Ícone de Classificação Indicativa para todos os públicos"></li>
+                <li><img src="./assets/ratings/rating-10anos.png" alt="Ícone de Classificação Indicativa para maiores de 10 anos"></li>
+                <li><img src="./assets/ratings/rating-12anos.png" alt="Ícone de Classificação Indicativa para maiores de 12 anos"></li>
+                <li><img src="./assets/ratings/rating-16anos.png" alt="Ícone de Classificação Indicativa para maiores de 16 anos"></li>
+                <li><img src="./assets/ratings/rating-18anos.png" alt="Ícone de Classificação Indicativa para maiores de 18 anos"></li>
+            </ul>
+
+            <p>Ao continuar declaro que estou ciente de que tenho a idade escolhida ou superior à ela, e que<br>qualquer conteúdo indesejado visto é de minha responsabilidade.</p>
+            
+            <button class="to-recommendations-section-btn" type="button">
+                <img src="assets/svg-icons/cards.svg" alt="Ícone de cartões, referente á próxima seção de recomendações de filmes">
+                <p>Ver recomendações</p>
+            </button>
+
+            <aside>
+                <img class="caret-navigator" src="assets/svg-icons/caret-left.svg" alt="Seta para esquerda para voltar à seção de Classificação Indicativa">
+            </aside>
+        </section>
+
+        <section class="mofinder-recommending">
+            <h1 class="reccomendation-title">{nome_do_filme}</h1>
+
+            <div class="reccomendation-app">
+                <div class="dynamic-cards-preview">
+                    <div class="dynamic-card"></div>
+                    <div class="dynamic-card"></div>
+                    <div class="dynamic-card" id="recommendation-banner"></div>
+                    <p>Lançamento em: 03/11/2020</p>
+                </div>
+
+                <article>
+                    <h3>Sobre esta recomendação:</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, eius nemo illo fuga quae distinctio ratione culpa impedit perferendis magnam. Voluptates reprehenderit aut saepe architecto odio minima modi laborum delectus.</p>
+                </article>
+
+                <aside>
+                    <h3>Informações:</h3>
+                    
+                    <ul class="recommendation-infos">
+                        <li id="rating"><img src="./assets/ratings/rating-livre.png" alt="Classificação Indicativa Livre"></li>
+                        
+                        <li id="type">
+                            <img src="./assets/svg-icons/monitor.svg" alt="Ícone de monitor de computador, referente ao tipo Série">
+                            <p>Série</p>
+                        </li>
+
+                        <li id="seasons-or-sequence">
+                            <img src="./assets/svg-icons/cards-three.svg" alt="Ícone de cartões em ordem crescente, referente às temporadas da Série">
+                            <p>2 Temporadas</p>
+                        </li>
+
+                        <li id="duration">
+                            <img src="./assets/svg-icons/clock.svg" alt="Ícone de relógio, referente a duração do filme ou duração total da Série">
+                            <p>2h</p>
+                        </li>
+
+                        <li id="category">
+                            <img src="./assets/svg-icons/mountains.svg" alt="Ícone de montanhas, referente a categoria do Filme ou Série">
+                            <p>Aventura</p>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+
+            <aside class="user-recommendation-rate">
+                <h4>O que achou desta recomendação?</h4>
+
+                <div class="user-choices-container">
+                    <button id="like-it" type="button">
+                        <img src="assets/svg-icons/thumbs-up.svg" alt="Ícone de like ou polegar informando positivamente">
+                        <p>Gostei disso.</p>
+                    </button>
+
+                    <button id="dislike-it" type="button">
+                        <img src="assets/svg-icons/thumbs-down.svg" alt="Ícone de deslike ou polegar informando negativamente">
+                        <p>Não gostei.</p>
+                    </button>
+                </div>
+            </aside>
+
+            <aside>
+                <img class="caret-navigator" src="assets/svg-icons/caret-left.svg" alt="Seta para esquerda para voltar à seleção da Plataforma de Streaming favorita">
+            </aside>
         </section>
     </main>
 </body>
