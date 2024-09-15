@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Inter Fonts -->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
     <!-- My styles -->
     <!-- <link rel="stylesheet" href="./styles/smartphones.css" media="screen and (max-width: 500px)"> </!-->
+    <link rel="stylesheet" href="./styles/main.css" media="all">
     <link rel="stylesheet" href="./styles/header.css" media="screen">
-    <link rel="stylesheet" href="./styles/main.css" media="screen">
     <link rel="stylesheet" href="./styles/sections.css" media="screen">
     <title>MoFinder - Get best movies recomendations!</title>
 </head>
@@ -26,8 +25,8 @@
 
         <nav class="page-sections-container">
             <ul>
-                <li><a class="section-link" href="#">Início</a></li>
-                <li><a class="section-link" href="#">Como usar</a></li>
+                <li><a class="section-link" href="#section1">Início</a></li>
+                <li><a class="section-link" href="#section2">Como usar</a></li>
                 <li><a class="section-link" href="#">Contato</a></li>
             </ul>
         </nav>
@@ -42,13 +41,13 @@
     </header>
 
     <main>
-        <section class="mofinder-section-home">
+        <section class="mofinder-section-home" id="section1">
             <div>
                 <h1>Escolher o filme perfeito não<br>precisa ser difícil..</h1>
                 <p>Consiga recomendações inteligentes com base em nosso banco de dados,<br>nada de grande catálogos! Encontre o filme perfeito agora!</p>
                 <button class="start-tour-btn" type="button">
                     <img src="assets/svg-icons/queue.svg" alt="Começar o tour">
-                    <p>Vamos lá!</p>
+                    <a href="#section2"><p>Vamos lá!</p></a>
                 </button>
             </div>
             
@@ -57,7 +56,7 @@
             </aside>
         </section>
 
-        <section class="mofinder-section-checkup">
+        <section class="mofinder-section-checkup" id="section2">
             <aside>
                 <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="Seta para cima para ir ao início">
             </aside>
@@ -83,11 +82,11 @@
 
             <button class="start-aplication-btn" type="button">
                 <img src="assets/svg-icons/play.svg" alt="Ícone de começar, se refere para iniciar a experiência">
-                <p>Começar!</p>
+                <a href="#section3"><p>Começar!</p></a>
             </button>
         </section>
 
-        <section class="mofinder-section-streamapp">
+        <section class="mofinder-section-streamapp" id="section3">
             <h1>Onde quer ser recomendado?</h1>
 
             <ul class="streamingapps-list">
@@ -101,11 +100,15 @@
             
             <button class="to-age-ratings-btn" type="button">
                 <img src="assets/ratings/rating-livre-32.png" alt="Ícone de Classificação Indicativa Livre">
-                <p>Classificações Indicativas</p>
+                <a href="#section4"><p>Classificações Indicativas</p></a>
             </button>
         </section>
 
-        <section class="mofinder-section-ratings">
+        <section class="mofinder-section-ratings" id="section4">
+            <aside>
+                <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="Seta para cima para voltar à seção de Streaming Apps">
+            </aside>
+            
             <h1>Qual sua faixa etária?</h1>
 
             <ul class="ratings-list">
@@ -120,15 +123,11 @@
             
             <button class="to-recommendations-section-btn" type="button">
                 <img src="assets/svg-icons/cards.svg" alt="Ícone de cartões, referente á próxima seção de recomendações de filmes">
-                <p>Ver recomendações</p>
+                <a href="#section5"><p>Ver recomendações</p></a>
             </button>
-
-            <aside>
-                <img class="caret-navigator" src="assets/svg-icons/caret-left.svg" alt="Seta para esquerda para voltar à seção de Classificação Indicativa">
-            </aside>
         </section>
 
-        <section class="mofinder-recommending">
+        <section class="mofinder-recommending" id="section5">
             <h1 class="reccomendation-title">{nome_do_filme}</h1>
 
             <div class="reccomendation-app">

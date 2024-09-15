@@ -17,53 +17,11 @@ section {
     padding-bottom: 2vh;
 
     color: white;
-    border: 2px dotted red;
-}
-
-button {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    width: 13rem;
-    height: 3.2rem;
-    padding: 1.6rem .5rem;
-
-    background-color: transparent;
-    border: 3px solid white;
-    border-radius: 11px;
-    color: white;
-    cursor: pointer;
-
-    font-size: clamp(5px, 1.2vw, 30px);
-    font-weight: 300;
-}
-
-button:hover {
-    border-color: var(--hover-btn-red);
-    transition: border-color .2s;
 }
 
 .mofinder-section-home > div {
+    text-wrap: nowrap;
     text-align: start;
-}
-
-aside {
-    text-align: center;
-}
-
-.mofinder-section-home > div > h1 {
-    font-weight: 700;
-    font-size: clamp(30px, 5vw, 65px);
-    margin-bottom: .2em;
-}
-
-.mofinder-section-home > div > p {
-    font-weight: 100;
-    font-size: clamp(10px, 2vw, 30px);
-    margin-bottom: 1.2em;
-    letter-spacing: 1px;
 }
 
 .mofinder-section-checkup {
