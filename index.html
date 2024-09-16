@@ -50,10 +50,6 @@
                     <a href="#section2"><p>Vamos lá!</p></a>
                 </button>
             </div>
-            
-            <aside>
-                <img class="caret-navigator" src="assets/svg-icons/caret-down.svg" alt="Seta para navegar para baixo da página">
-            </aside>
         </section>
 
         <section class="mofinder-section-checkup" id="section2">
@@ -87,17 +83,23 @@
         </section>
 
         <section class="mofinder-section-streamapp" id="section3">
+            <aside>
+                <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="Seta para cima para ir ao início">
+            </aside>
+            
             <h1>Onde quer ser recomendado?</h1>
 
-            <ul class="streamingapps-list">
-                <li><img src="./assets/streaming-apps/logo-netflix.png" alt="Logo da Netflix"></li>
-                <li><img src="./assets/streaming-apps/logo-hbo-max.png" alt="Logo do HBO Max"></li>
-                <li><img src="./assets/streaming-apps/logo-disney-plus.png" alt="Logo do Disney Plus"></li>
-                <li><img src="./assets/streaming-apps/logo-prime-video.png" alt="Logo da Prime Video"></li>
-            </ul>
+            <div>
+                <ul class="streamingapps-list">
+                    <li><img src="./assets/streaming-apps/logo-netflix.png" alt="Logo da Netflix"></li>
+                    <li><img src="./assets/streaming-apps/logo-hbo-max.png" alt="Logo do HBO Max"></li>
+                    <li><img src="./assets/streaming-apps/logo-disney-plus.png" alt="Logo do Disney Plus"></li>
+                    <li><img src="./assets/streaming-apps/logo-prime-video.png" alt="Logo da Prime Video"></li>
+                </ul>
 
-            <p>*Estes são serviços de entretenimento oficiais e pagos.<br>Demais serviços considerados “piratas” não serão divulgados em nossa plataforma.</p>
-            
+                <p>*Estes são serviços de entretenimento oficiais e pagos.<br>Demais serviços considerados “piratas” não serão divulgados em nossa plataforma.</p>
+            </div>
+
             <button class="to-age-ratings-btn" type="button">
                 <img src="assets/ratings/rating-livre-32.png" alt="Ícone de Classificação Indicativa Livre">
                 <a href="#section4"><p>Classificações Indicativas</p></a>
@@ -105,22 +107,24 @@
         </section>
 
         <section class="mofinder-section-ratings" id="section4">
-            <aside>
-                <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="Seta para cima para voltar à seção de Streaming Apps">
+            <aside></aside>
+                <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="Seta para cima para ir ao início">
             </aside>
             
             <h1>Qual sua faixa etária?</h1>
 
-            <ul class="ratings-list">
-                <li><img src="./assets/ratings/rating-livre.png" alt="Ícone de Classificação Indicativa para todos os públicos"></li>
-                <li><img src="./assets/ratings/rating-10anos.png" alt="Ícone de Classificação Indicativa para maiores de 10 anos"></li>
-                <li><img src="./assets/ratings/rating-12anos.png" alt="Ícone de Classificação Indicativa para maiores de 12 anos"></li>
-                <li><img src="./assets/ratings/rating-16anos.png" alt="Ícone de Classificação Indicativa para maiores de 16 anos"></li>
-                <li><img src="./assets/ratings/rating-18anos.png" alt="Ícone de Classificação Indicativa para maiores de 18 anos"></li>
-            </ul>
+            <div>
+                <ul class="ratings-list">
+                    <li><img src="./assets/ratings/rating-livre.png" alt="Ícone de Classificação Indicativa para todos os públicos"></li>
+                    <li><img src="./assets/ratings/rating-10anos.png" alt="Ícone de Classificação Indicativa para maiores de 10 anos"></li>
+                    <li><img src="./assets/ratings/rating-12anos.png" alt="Ícone de Classificação Indicativa para maiores de 12 anos"></li>
+                    <li><img src="./assets/ratings/rating-16anos.png" alt="Ícone de Classificação Indicativa para maiores de 16 anos"></li>
+                    <li><img src="./assets/ratings/rating-18anos.png" alt="Ícone de Classificação Indicativa para maiores de 18 anos"></li>
+                </ul>
 
-            <p>Ao continuar declaro que estou ciente de que tenho a idade escolhida ou superior à ela, e que<br>qualquer conteúdo indesejado visto é de minha responsabilidade.</p>
-            
+                <p>Ao continuar declaro que estou ciente de que tenho a idade escolhida ou superior à ela, e que<br>qualquer conteúdo indesejado visto é de minha responsabilidade.</p>
+            </div>
+
             <button class="to-recommendations-section-btn" type="button">
                 <img src="assets/svg-icons/cards.svg" alt="Ícone de cartões, referente á próxima seção de recomendações de filmes">
                 <a href="#section5"><p>Ver recomendações</p></a>
@@ -128,52 +132,59 @@
         </section>
 
         <section class="mofinder-recommending" id="section5">
+            <aside>
+                <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="Seta para cima para ir ao início">
+            </aside>
+            
             <h1 class="reccomendation-title">{nome_do_filme}</h1>
 
-            <div class="reccomendation-app">
+            <div class="recomendation-app">
                 <div class="dynamic-cards-preview">
-                    <div class="dynamic-card"></div>
-                    <div class="dynamic-card"></div>
-                    <div class="dynamic-card" id="recommendation-banner"></div>
-                    <p>Lançamento em: 03/11/2020</p>
+                    <div class="dynamic-card" id="card-1"></div>
+                    <div class="dynamic-card" id="card-2"></div>
+                    <div class="dynamic-card" id="recommendation-card">
+                        <p>Lançamento em: 03/11/2020</p>
+                    </div>
                 </div>
 
                 <article>
-                    <h3>Sobre esta recomendação:</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, eius nemo illo fuga quae distinctio ratione culpa impedit perferendis magnam. Voluptates reprehenderit aut saepe architecto odio minima modi laborum delectus.</p>
-                </article>
-
-                <aside>
-                    <h3>Informações:</h3>
-                    
-                    <ul class="recommendation-infos">
-                        <li id="rating"><img src="./assets/ratings/rating-livre.png" alt="Classificação Indicativa Livre"></li>
+                    <div>
+                        <h3>Sobre esta recomendação:</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, eius nemo illo fuga quae distinctio ratione culpa impedit perferendis magnam. Voluptates reprehenderit aut saepe architecto odio minima modi laborum delectus.</p>
+                    </div>
+                
+                    <aside>
+                        <h3>Informações:</h3>
                         
-                        <li id="type">
-                            <img src="./assets/svg-icons/monitor.svg" alt="Ícone de monitor de computador, referente ao tipo Série">
-                            <p>Série</p>
-                        </li>
-
-                        <li id="seasons-or-sequence">
-                            <img src="./assets/svg-icons/cards-three.svg" alt="Ícone de cartões em ordem crescente, referente às temporadas da Série">
-                            <p>2 Temporadas</p>
-                        </li>
-
-                        <li id="duration">
-                            <img src="./assets/svg-icons/clock.svg" alt="Ícone de relógio, referente a duração do filme ou duração total da Série">
-                            <p>2h</p>
-                        </li>
-
-                        <li id="category">
-                            <img src="./assets/svg-icons/mountains.svg" alt="Ícone de montanhas, referente a categoria do Filme ou Série">
-                            <p>Aventura</p>
-                        </li>
-                    </ul>
-                </aside>
+                        <ul class="recommendation-infos">
+                            <li id="rating"><img src="./assets/ratings/rating-livre-56.png" alt="Classificação Indicativa Livre"></li>
+                            
+                            <li id="type">
+                                <img src="./assets/svg-icons/monitor.svg" alt="Ícone de monitor de computador, referente ao tipo Série">
+                                <p>Série</p>
+                            </li>
+    
+                            <li id="seasons-or-sequence">
+                                <img src="./assets/svg-icons/cards-three.svg" alt="Ícone de cartões em ordem crescente, referente às temporadas da Série">
+                                <p>2 Temporadas</p>
+                            </li>
+    
+                            <li id="duration">
+                                <img src="./assets/svg-icons/clock.svg" alt="Ícone de relógio, referente a duração do filme ou duração total da Série">
+                                <p>2h</p>
+                            </li>
+    
+                            <li id="category">
+                                <img src="./assets/svg-icons/mountains.svg" alt="Ícone de montanhas, referente a categoria do Filme ou Série">
+                                <p>Aventura</p>
+                            </li>
+                        </ul>
+                    </aside>
+                </article>
             </div>
 
             <aside class="user-recommendation-rate">
-                <h4>O que achou desta recomendação?</h4>
+                <h3>O que achou desta recomendação?</h3>
 
                 <div class="user-choices-container">
                     <button id="like-it" type="button">
@@ -186,10 +197,6 @@
                         <p>Não gostei.</p>
                     </button>
                 </div>
-            </aside>
-
-            <aside>
-                <img class="caret-navigator" src="assets/svg-icons/caret-left.svg" alt="Seta para esquerda para voltar à seleção da Plataforma de Streaming favorita">
             </aside>
         </section>
     </main>

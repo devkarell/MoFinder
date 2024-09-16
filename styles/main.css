@@ -22,7 +22,11 @@ html, body {
 }
 
 body {
-    background-color: #1b1b1b;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #151515;
     
     /*
     background-image: url("../assets/background-cinema-chairs.jpg");
@@ -37,8 +41,8 @@ main {
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: center;
-    margin-inline: auto;
     width: 85%;
+    margin-block: 10vh;
 }
 
 button {
@@ -72,6 +76,13 @@ h1 {
     font-weight: 700;
     font-size: clamp(32px, 3.75vw, 60px);
     margin-bottom: .2em;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: clamp(16px, 2vw, 35px);
+    margin-bottom: .2em;
+    color: #dadada;
 }
 
 p {
