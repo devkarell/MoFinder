@@ -13,7 +13,7 @@ header {
     align-items: center;
     width: 100%;
     height: 10vh;
-    padding: .7rem 1rem;
+    padding: .5rem 2rem;
     position: fixed;
 
     background-color: var(--background-color);
@@ -21,12 +21,23 @@ header {
 }
 
 .mofinder-logo-container {
-    flex: 0 1 128px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    min-width: 5rem;
 }
 
-.mofinder-logo-container > a, .mofinder-logo-container > a > img {
+.mofinder-logo-container > a {
     width: 100%;
     height: 100%;
+    text-decoration: none;
+}
+
+.mofinder-logo-container > a > img {
+    width: 90%;
+    height: auto;
 }
 
 .hamburguer-menu-link { display: none; }
@@ -35,6 +46,7 @@ header > nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px dotted red;
 }
 
 header > nav > ul {
@@ -46,15 +58,18 @@ header > nav > ul {
     width: 100%;
 }
 
-.page-sections-container {
-    flex: 0 1 20rem;
-    margin-inline: 2rem;
+.page-sections-container > ul {
+    justify-content: center;
+}
+
+.page-sections-container > ul > li {
+    margin-inline: 3vw;
 }
 
 .section-link {
     width: 100%;
     height: 100%;
-    font-size: clamp(8px, 2.5vw, 17px);
+    font-size: clamp(.5em, 2vw, 1em);
     white-space: nowrap;
     font-weight: 300;
     color: white;
@@ -67,15 +82,27 @@ header > nav > ul {
 }
 
 .external-links-container {
-    flex: 0 1 128px;
+    width: 9vw;
+    min-width: 5rem;
 }
 
-.external-links-container > ul {
-    flex: 0 1 100%;
+.external-links-container > ul > li {
+    margin-inline: .2rem;
+    width: 1.7rem;
+    
 }
 
 .external-links-container > ul > li, .external-link {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.external-link > img {
+    width: 100%;
+}
+
+#how-to-use, #contact {
+    color: rgb(133, 133, 133);
+    cursor: default;
 }
