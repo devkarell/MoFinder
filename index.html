@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Inter Fonts -->
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-
-    <!-- My styles -->
     <!-- <link rel="stylesheet" href="./styles/smartphones.css" media="screen and (max-width: 500px)"> </!-->
     <link rel="stylesheet" href="./styles/main.css" media="all">
     <link rel="stylesheet" href="./styles/header.css" media="screen">
     <link rel="stylesheet" href="./styles/sections.css" media="screen">
+
     <title>MoFinder - Get best movies recomendations!</title>
 </head>
 <body>
+    <script>
+        function getViewportSize() {
+        var width = window.innerWidth;
+        var height = window.innerHeight;
+        document.getElementById("viewportSize").innerText = `Tamanho da Viewport: ${width}px x ${height}px`;
+        }
+
+        // Chama a função ao carregar a página
+        window.onload = getViewportSize;
+
+        // Atualiza o valor ao redimensionar a janela
+        window.onresize = getViewportSize;
+    </script>
+
+    <p id="viewportSize">Tamanho da Viewport: </p>
+
     <header>
         <div class="mofinder-logo-container">
             <a href="https://kareu-uu.github.io/MoFinder"><img src="./assets/logo-mofinder.png" alt="A logo oficial do Movies Finder"></a>
