@@ -185,6 +185,7 @@ section {
     margin-bottom: .5rem;
 }
 
+/*
 article {
     display: flex;
     flex-flow: column nowrap;
@@ -194,7 +195,7 @@ article {
     
     width: 55%;
     height: 100%;
-}
+}*/
 
 article div p {
     text-wrap: wrap;

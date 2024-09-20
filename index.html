@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/main.css" media="all">
     <link rel="stylesheet" href="./styles/header.css" media="screen">
     <link rel="stylesheet" href="./styles/sections.css" media="screen">
+    <link rel="stylesheet" href="./styles/mobile-query.css" media="screen and (max-width: 768px)">
 
     <title>MoFinder - Get best movies recomendations!</title>
 </head>
@@ -26,7 +27,7 @@
         window.onresize = getViewportSize;
     </script>
 
-    <p id="viewportSize">Tamanho da Viewport: </p>
+    <p id="viewportSize" style="display: none;">Tamanho da Viewport: </p>
 
     <header>
         <div class="mofinder-logo-container">
@@ -35,28 +36,33 @@
         
         <a class="hamburguer-menu-link" href="#"><img id="hamburguer-menu-img" src="assets/svg-icons/list.svg" alt="Clique para acessar o menu"></a>
 
-        <nav class="page-sections-container">
-            <ul>
-                <li><a class="section-link" href="#section1">Início</a></li>
-                <li><a class="section-link" id="how-to-use" href="#">Como usar</a></li>
-                <li><a class="section-link" id="contact" href="#">Contato</a></li>
-            </ul>
-        </nav>
-
-        <nav class="external-links-container">
-            <ul>
-                <li><a class="external-link" href="https://kareu-uu.carrd.co" target="_blank"><img src="./assets/svg-icons/link.svg" alt="Seja redirecionado para meu portfólio"></a></li>
-                <li><a class="external-link" href="https://www.linkedin.com/in/karell-lutkmeier/" target="_blank"><img src="./assets/svg-icons/linkedin-logo.svg" alt="Clique para ir ao meu perfil do LinkedIn"></a></li>
-                <li><a class="external-link" href="https://github.com/kareu-uu/MoFinder" target="_blank"><img src="./assets/svg-icons/github-logo.svg" alt="Clique para acessar meu GitHub"></a></li>
-            </ul>
-        </nav>
+        <div class="navs-mobile-query-container">
+            <nav class="page-sections-container">
+                <ul>
+                    <li><a class="section-link" href="#section1">Início</a></li>
+                    <li><a class="section-link" id="how-to-use" href="#">Como usar</a></li>
+                    <li><a class="section-link" id="contact" href="#">Contato</a></li>
+                </ul>
+            </nav>
+    
+            <nav class="external-links-container">
+                <ul>
+                    <li><a class="external-link" href="https://kareu-uu.carrd.co" target="_blank"><img src="./assets/svg-icons/link.svg" alt="Seja redirecionado para meu portfólio"></a></li>
+                    <li><a class="external-link" href="https://www.linkedin.com/in/karell-lutkmeier/" target="_blank"><img src="./assets/svg-icons/linkedin-logo.svg" alt="Clique para ir ao meu perfil do LinkedIn"></a></li>
+                    <li><a class="external-link" href="https://github.com/kareu-uu/MoFinder" target="_blank"><img src="./assets/svg-icons/github-logo.svg" alt="Clique para acessar meu GitHub"></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section class="mofinder-section-home" id="section1">
             <div>
-                <h1>Escolher o filme perfeito não<br>precisa ser difícil..</h1>
-                <p>Consiga recomendações inteligentes com base em nosso banco de dados,<br>nada de grande catálogos! Encontre o filme perfeito agora!</p>
+                <div class="home-labels-container">
+                    <h1>Escolher o filme perfeito não<br>precisa ser difícil..</h1>
+                    <p>Consiga recomendações inteligentes com base em nosso banco de dados,<br>nada de grande catálogos! Encontre o filme perfeito agora!</p>
+                </div>
+                
                 <button class="start-tour-btn" type="button">
                     <img src="assets/svg-icons/queue.svg" alt="Começar o tour">
                     <a href="#section2"><p>Vamos lá!</p></a>
