@@ -4,70 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <link rel="stylesheet" href="./styles/smartphones.css" media="screen and (max-width: 500px)"> </!-->
-    <link rel="stylesheet" href="./styles/main.css" media="all">
-    <link rel="stylesheet" href="./styles/header.css" media="screen">
-    <link rel="stylesheet" href="./styles/sections.css" media="screen">
-    <link rel="stylesheet" href="./styles/mobile-query.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="./styles/styles.css" media="all">
+    <!--<link rel="stylesheet" href="./styles/header.css" media="screen">/!-->
+    <!--<link rel="stylesheet" href="./styles/sections.css" media="screen">/!-->
+    <!--<link rel="stylesheet" href="./styles/mobile-query.css" media="screen and (max-width: 768px)">/!-->
 
     <title>MoFinder - Get best movies recomendations!</title>
 </head>
 <body>
-    <script>
-        function getViewportSize() {
-        var width = window.innerWidth;
-        var height = window.innerHeight;
-        document.getElementById("viewportSize").innerText = `Tamanho da Viewport: ${width}px x ${height}px`;
-        }
+    <div class="hamburguer-dynamic-shadow"></div>
 
-        // Chama a função ao carregar a página
-        window.onload = getViewportSize;
+    <aside class="hamburguer-container">
+        <div id="hamburguer-links-container">
+            <nav id="page-links">
+                <a class="section-link" id="home" href="#section1">Início</a>
+                <a class="section-link" id="how-to-use" href="#">Como usar</a>
+                <a class="section-link" id="contact" href="#">Contato</a>
+            </nav>
 
-        // Atualiza o valor ao redimensionar a janela
-        window.onresize = getViewportSize;
-    </script>
+            <nav id="external-links">
+                <a class="external-link" id="site" href="https://kareu-uu.carrd.co" target="_blank"></a>
+                <a class="external-link" id="linkedin" href="https://linkedin.com/in/karell-lutkmeier/" target="_blank"></a>
+                <a class="external-link" id="github" href="https://github.com/kareu-uu/MoFinder" target="_blank"></a>
+            </nav>
+        </div>
 
-    <p id="viewportSize" style="display: none;">Tamanho da Viewport: </p>
+        <img id="hamburguer-toggle" src="assets/svg-icons/list.svg" alt="Clique para acessar o menu">
+    </aside>
 
     <header>
-        <div class="mofinder-logo-container">
-            <a href="https://kareu-uu.github.io/MoFinder"><img src="./assets/logo-mofinder.png" alt="A logo oficial do Movies Finder"></a>
-        </div>
-        
-        <a class="hamburguer-menu-link" href="#"><img id="hamburguer-menu-img" src="assets/svg-icons/list.svg" alt="Clique para acessar o menu"></a>
+        <a id="mofinder-logo" href="https://kareu-uu.github.io/MoFinder"></a>
 
-        <div class="navs-mobile-query-container">
-            <nav class="page-sections-container">
-                <ul>
-                    <li><a class="section-link" href="#section1">Início</a></li>
-                    <li><a class="section-link" id="how-to-use" href="#">Como usar</a></li>
-                    <li><a class="section-link" id="contact" href="#">Contato</a></li>
-                </ul>
-            </nav>
-    
-            <nav class="external-links-container">
-                <ul>
-                    <li><a class="external-link" href="https://kareu-uu.carrd.co" target="_blank"><img src="./assets/svg-icons/link.svg" alt="Seja redirecionado para meu portfólio"></a></li>
-                    <li><a class="external-link" href="https://www.linkedin.com/in/karell-lutkmeier/" target="_blank"><img src="./assets/svg-icons/linkedin-logo.svg" alt="Clique para ir ao meu perfil do LinkedIn"></a></li>
-                    <li><a class="external-link" href="https://github.com/kareu-uu/MoFinder" target="_blank"><img src="./assets/svg-icons/github-logo.svg" alt="Clique para acessar meu GitHub"></a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="page-sections-container">
+            <ul>
+                <li><a class="section-link" href="#section1">Início</a></li>
+                <li><a class="section-link" id="how-to-use" href="#">Como usar</a></li>
+                <li><a class="section-link" id="contact" href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <nav class="external-links-container">
+            <ul>
+                <li><a class="external-link" href="https://kareu-uu.carrd.co" target="_blank"><img src="./assets/svg-icons/link.svg" alt="Seja redirecionado para meu portfólio"></a></li>
+                <li><a class="external-link" href="https://www.linkedin.com/in/karell-lutkmeier/" target="_blank"><img src="./assets/svg-icons/linkedin-logo.svg" alt="Clique para ir ao meu perfil do LinkedIn"></a></li>
+                <li><a class="external-link" href="https://github.com/kareu-uu/MoFinder" target="_blank"><img src="./assets/svg-icons/github-logo.svg" alt="Clique para acessar meu GitHub"></a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <section class="mofinder-section-home" id="section1">
-            <div>
-                <div class="home-labels-container">
-                    <h1>Escolher o filme perfeito não<br>precisa ser difícil..</h1>
-                    <p>Consiga recomendações inteligentes com base em nosso banco de dados,<br>nada de grande catálogos! Encontre o filme perfeito agora!</p>
-                </div>
-                
-                <button class="start-tour-btn" type="button">
-                    <img src="assets/svg-icons/queue.svg" alt="Começar o tour">
-                    <a href="#section2"><p>Vamos lá!</p></a>
-                </button>
+            <div class="labels-container">
+                <h1>Escolher o filme perfeito não<br>precisa ser difícil..</h1>
+                <p>Consiga recomendações inteligentes com base em nosso banco de dados, nada de grande catálogos! Encontre o filme perfeito agora!</p>
             </div>
+            
+            <button class="start-tour-btn" type="button">
+                <img src="assets/svg-icons/queue.svg" alt="Começar o tour">
+                <p>Vamos lá!</p>
+            </button>
         </section>
 
         <section class="mofinder-section-checkup" id="section2">
@@ -96,7 +91,7 @@
 
             <button class="start-aplication-btn" type="button">
                 <img src="assets/svg-icons/play.svg" alt="Ícone de começar, se refere para iniciar a experiência">
-                <a href="#section3"><p>Começar!</p></a>
+                <p>Começar!</p>
             </button>
         </section>
 
@@ -115,17 +110,17 @@
                     <li><img src="./assets/streaming-apps/logo-prime-video.png" alt="Logo da Prime Video"></li>
                 </ul>
 
-                <p>*Estes são serviços de entretenimento oficiais e pagos.<br>Demais serviços considerados “piratas” não serão divulgados em nossa plataforma.</p>
+                <small>*Estes são serviços de entretenimento oficiais e pagos. Demais serviços considerados “piratas” não serão divulgados em nossa plataforma.</small>
             </div>
 
             <button class="to-age-ratings-btn" type="button">
                 <img src="assets/ratings/rating-livre-32.png" alt="Ícone de Classificação Indicativa Livre">
-                <a href="#section4"><p>Classificações Indicativas</p></a>
+                <p>Classificações Indicativas</p>
             </button>
         </section>
 
         <section class="mofinder-section-ratings" id="section4">
-            <aside></aside>
+            <aside>
                 <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="Seta para cima para ir ao início">
             </aside>
             
@@ -140,12 +135,12 @@
                     <li><img src="./assets/ratings/rating-18anos.png" alt="Ícone de Classificação Indicativa para maiores de 18 anos"></li>
                 </ul>
 
-                <p>Ao continuar declaro que estou ciente de que tenho a idade escolhida ou superior à ela, e que<br>qualquer conteúdo indesejado visto é de minha responsabilidade.</p>
+                <small>Ao continuar declaro que estou ciente de que tenho a idade escolhida ou superior à ela, e que<br>qualquer conteúdo indesejado visto é de minha responsabilidade.</small>
             </div>
 
             <button class="to-recommendations-section-btn" type="button">
                 <img src="assets/svg-icons/cards.svg" alt="Ícone de cartões, referente á próxima seção de recomendações de filmes">
-                <a href="#section5"><p>Ver recomendações</p></a>
+                <p>Ver recomendações</p>
             </button>
         </section>
 
@@ -161,7 +156,7 @@
                     <div class="dynamic-card" id="card-1"></div>
                     <div class="dynamic-card" id="card-2"></div>
                     <div class="dynamic-card" id="recommendation-card">
-                        <p>Lançamento em: 03/11/2020</p>
+                        <small>Lançamento em: 03/11/2020</small>
                     </div>
                 </div>
 

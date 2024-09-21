@@ -1,46 +1,8 @@
 @charset "UTF-8";
 
-:root {
-    --background-color: #1b1b1b;
-    --box-shadow-dark: #0e0e0e;
-    --hover-btn-red: #eb5148;
-}
 
-header {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 8vh;
-    padding: .5rem 2rem;
-    position: fixed;
 
-    background-color: var(--background-color);
-    box-shadow: 0px 0px 30px var(--box-shadow-dark);
-}
 
-.mofinder-logo-container {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-}
-
-.mofinder-logo-container > a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-}
-
-.mofinder-logo-container > a > img {
-    width: 100%;
-    height: auto;
-}
 
 .hamburguer-menu-link { display: none; }
 
