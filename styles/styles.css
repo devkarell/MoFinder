@@ -1,6 +1,21 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@keyframes aside-caret-loop {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -162,9 +177,9 @@ main {
 }
 
 h1 {
-    font-weight: 700;
-    font-size: 2.3em;
-    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 1.9em;
+    margin-bottom: 1rem;
     text-align: center;
     text-wrap: wrap;
     color: white;
@@ -178,20 +193,20 @@ h3 {
 }
 
 p {
-    font-weight: 100;
+    font-weight: 300;
     font-size: 1em;
-    margin-bottom: 1.2rem;
+    margin-bottom: .5rem;
     text-align: center;
     text-wrap: balance;
-    color: white;
+    color: rgb(185, 185, 185);
 }
 
 small {
     color: var(--small-letters-color);
-    font-weight: 200;
-    font-size: .7em;
+    font-weight: 300;
+    font-size: .8em;
     text-wrap: pretty;
-    margin-bottom: 1rem;
+    margin-block: .5em 2em;
 }
 
 button {
@@ -200,29 +215,31 @@ button {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    height: 2rem;
-    padding-block: .5rem;
-    padding-inline: 1rem;
-    
+    padding-block: .5em 1em;
+    padding-inline: 2rem;
+    margin-inline: auto;
+    height: 1.2em;
+
     text-align: center;
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 11px;
-    cursor: pointer;
+    text-wrap: nowrap;
+    font-weight: 300;
+    font-size: 1em;
+    color: black;
+    background-color: #f3f3f3;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.479);
 }
 
-button p {
-    font-weight: 300;
-    margin: 0px;
-    margin-left: 1rem;
-}
+button img { display: none; }
 
 button:hover {
-    border-color: var(--hover-btn-color);
-    transition: border-color .2s;
+    background-color: var(--hover-btn-color);
+    color: #f3f3f3;
+    border-bottom: 3px solid #f3f3f3;
+    box-shadow: none;
+    transition: all .2s;
 }
 
-section {
+main section {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -233,14 +250,98 @@ section {
     padding-block: 2em;
 }
 
+section aside {
+    z-index: -1;
+}
+
+.caret-navigator {
+    animation: aside-caret-loop 1s ease-in-out infinite;
+}
+
 .mofinder-section-home .labels-container h1 {
+    text-align: start;
+    text-wrap: nowrap;
+}
+
+.mofinder-section-home .labels-container p {
     text-align: start;
     text-wrap: pretty;
 }
 
-.mofinder-section-home .labels-container p {
-    text-align: end;
-    text-wrap: pretty;
+.mofinder-section-checkup {
+    justify-content: space-between;
+}
+
+.checkup-top-side-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: hidden;
+    margin-bottom: 1em;
+}
+
+.checkup-top-side-container #all-steps-toggle {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1em;
+    overflow-y: scroll;
+    width: 90%;
+
+    color: var(--small-letters-color);
+}
+
+.steps-fieldset {
+    width: 90%;
+    margin-block: .5em 1em;
+    margin-inline: auto;
+    padding: 1em .5em .2em;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.steps-fieldset legend {
+    color: rgb(222, 222, 222);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.steps-fieldset p {
+    font-size: .9em;
+    text-align: justify;
+    font-weight: 200;
+}
+
+#all-steps-toggle summary {
+    font-size: 1em;
+}
+
+#step-one-toggle {
+    color: white;
+    margin-top: .5em;
+}
+
+#step-one-toggle summary {
+    font-size: .8em;
+    text-wrap: wrap;
+    line-break: anywhere;
+}
+
+#step-two-toggle {
+    color: white;
+}
+
+#step-two-toggle summary {
+    font-size: .8em;
+    text-wrap: wrap;
+    line-break: anywhere;
+}
+
+.mofinder-section-streamapp {
+    justify-content: space-between;
 }
 
 .mofinder-section-streamapp div {

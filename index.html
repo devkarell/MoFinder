@@ -55,13 +55,13 @@
     <main>
         <section class="mofinder-section-home" id="section1">
             <div class="labels-container">
-                <h1>Escolher o filme perfeito não<br>precisa ser difícil..</h1>
-                <p>Consiga recomendações inteligentes com base em nosso banco de dados, nada de grande catálogos! Encontre o filme perfeito agora!</p>
+                <h1>Escolher o<br>filme perfeito<br>não precisa ser difícil.</h1>
+                <p>Veja recomendações inteligentes de filmes/séries de forma dinâmica, nada de grande catálogos!</p>
             </div>
             
             <button class="start-tour-btn" type="button">
                 <img src="assets/svg-icons/queue.svg" alt="Começar o tour">
-                <p>Vamos lá!</p>
+                Mostre-me!
             </button>
         </section>
 
@@ -70,29 +70,43 @@
                 <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="Seta para cima para ir ao início">
             </aside>
             
-            <div class="title-description-help">
-                <h1>Então, preparado?!</h1>
-                <p>Para encontrar o filme perfeito você terá que interagir positivamente ou negativamente<br>nas recomendações que vamos te fazer. Esta é uma experiência totalmente personalizada.</p>
+            <div class="checkup-top-side-container">
+                <div class="title-description-help">
+                    <h1>Antes de começarmos..</h1>
+                    <p>Para encontrar o filme perfeito, você terá que interagir <strong>positivamente</strong> ou <strong>negativamente</strong> para as recomendações que o algorítmo irá mostrar na tela, assim melhores recomendações serão feitas até decidirmos a recomendação final.</p>
+                </div>
+
+                <details class="steps-toggle" id="all-steps-toggle">
+                    <summary>Veja o passo-passo da experiência</summary>
+    
+                    <details class="steps-toggle" id="step-one-toggle">
+                        <summary>Prevenção de conteúdo indesejado</summary>
+    
+                        <fieldset class="steps-fieldset" id="step-one-fieldset">
+                            <legend>Fluxo do usuário</legend>
+                            <p>Algumas perguntas básicas sobre o serviço de streaming favorito e a classificação indicativa serão feitas, isto serve para previnirmos que o usuário receba recomendações de plataforma que não possua o acesso, ou, que tenha problemas com conteúdo indesejado.</p>
+                        </fieldset>
+                    </details>
+    
+                    <details class="steps-toggle" id="step-two-toggle">
+                        <summary>Entenda o algorítmo</summary>
+    
+                        <fieldset class="steps-fieldset" id="step-two-fieldset">
+                            <legend>O Algorítmo</legend>
+                            <p>Por meio de “Gostei” ou “Não gostei”, o algoritmo irá escolher as melhores sugestões com base em seu interesse.<br><br>Serão 5 recomendações dinâmicas, e cada filme/série recomendado terá explicíto suas informações para que a experiência do usuário seja eficaz.</p>
+                        </fieldset>
+                    </details>
+                </details>
             </div>
 
-            <article class="steps-help-one">
-                <fieldset>
-                    <legend>#1</legend>
-                    <p>Responda a perguntas básicas sobre o serviço de Streaming favorito e<br>Classificação Indicativa,e nós começaremos a lhe recomendar filmes<br>dinamicamente.</p>
-                </fieldset>
-            </article>
-
-            <article class="steps-help-two">
-                <fieldset>
-                    <legend>#2</legend>
-                    <p>Por meio de “Gostei” ou “Não gostei” o algoritmo irá te recomendar as<br>melhores sugestões para você com base no interesse.</p>
-                </fieldset>
-            </article>
-
-            <button class="start-aplication-btn" type="button">
-                <img src="assets/svg-icons/play.svg" alt="Ícone de começar, se refere para iniciar a experiência">
-                <p>Começar!</p>
-            </button>
+            <div class="checkup-bottom-side-container">
+                <button class="start-aplication-btn" type="button">
+                    <img src="assets/svg-icons/play.svg" alt="Ícone de começar, se refere para iniciar a experiência">
+                    Começar!
+                </button>
+    
+                <small>Iniciar recomendação</small>
+            </div>
         </section>
 
         <section class="mofinder-section-streamapp" id="section3">
@@ -100,23 +114,28 @@
                 <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="Seta para cima para ir ao início">
             </aside>
             
-            <h1>Onde quer ser recomendado?</h1>
+            <div class="streamapp-top-side-container">
+                <h1>Onde quer ser recomendado?</h1>
 
-            <div>
-                <ul class="streamingapps-list">
-                    <li><img src="./assets/streaming-apps/logo-netflix.png" alt="Logo da Netflix"></li>
-                    <li><img src="./assets/streaming-apps/logo-hbo-max.png" alt="Logo do HBO Max"></li>
-                    <li><img src="./assets/streaming-apps/logo-disney-plus.png" alt="Logo do Disney Plus"></li>
-                    <li><img src="./assets/streaming-apps/logo-prime-video.png" alt="Logo da Prime Video"></li>
-                </ul>
-
-                <small>*Estes são serviços de entretenimento oficiais e pagos. Demais serviços considerados “piratas” não serão divulgados em nossa plataforma.</small>
+                <div class="streaming-content-container">
+                    <ul class="streamingapps-list">
+                        <li><img src="./assets/streaming-apps/logo-netflix.png" alt="Logo da Netflix"></li>
+                        <li><img src="./assets/streaming-apps/logo-hbo-max.png" alt="Logo do HBO Max"></li>
+                        <li><img src="./assets/streaming-apps/logo-disney-plus.png" alt="Logo do Disney Plus"></li>
+                        <li><img src="./assets/streaming-apps/logo-prime-video.png" alt="Logo da Prime Video"></li>
+                    </ul>
+                    <small>*Estes são serviços de entretenimento oficiais e pagos. Demais serviços considerados “piratas” não serão divulgados em nossa plataforma.</small>
+                </div>
             </div>
 
-            <button class="to-age-ratings-btn" type="button">
-                <img src="assets/ratings/rating-livre-32.png" alt="Ícone de Classificação Indicativa Livre">
-                <p>Classificações Indicativas</p>
-            </button>
+            <div class="streamapp-bottom-side-container">
+                <button class="to-age-ratings-btn" type="button">
+                    <img src="assets/ratings/rating-livre-32.png" alt="Ícone de Classificação Indicativa Livre">
+                    Próximo
+                </button>
+
+                <small>Classificações Indicativas</small>
+            </div>
         </section>
 
         <section class="mofinder-section-ratings" id="section4">
@@ -142,6 +161,8 @@
                 <img src="assets/svg-icons/cards.svg" alt="Ícone de cartões, referente á próxima seção de recomendações de filmes">
                 <p>Ver recomendações</p>
             </button>
+
+            <small>Ver as sugestões disponíveis</small>
         </section>
 
         <section class="mofinder-recommending" id="section5">
