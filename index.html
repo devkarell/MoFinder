@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./styles/styles.css" media="all">
+    <link rel="stylesheet" href="./styles/styles.css" media="screen and (max-width: 768px)">
     <!--<link rel="stylesheet" href="./styles/header.css" media="screen">/!-->
     <!--<link rel="stylesheet" href="./styles/sections.css" media="screen">/!-->
     <!--<link rel="stylesheet" href="./styles/mobile-query.css" media="screen and (max-width: 768px)">/!-->
@@ -59,7 +59,7 @@
                 <p>Veja recomendações inteligentes de filmes/séries de forma dinâmica, nada de grande catálogos!</p>
             </div>
             
-            <button class="start-tour-btn" type="button">
+            <button class="section-navigator-button" id="start-tour-btn" type="button">
                 <img src="assets/svg-icons/queue.svg" alt="Começar o tour">
                 Mostre-me!
             </button>
@@ -100,7 +100,7 @@
             </div>
 
             <div class="checkup-bottom-side-container">
-                <button class="start-aplication-btn" type="button">
+                <button class="section-navigator-button" id="start-aplication-btn" type="button">
                     <img src="assets/svg-icons/play.svg" alt="Ícone de começar, se refere para iniciar a experiência">
                     Começar!
                 </button>
@@ -117,19 +117,18 @@
             <div class="streamapp-top-side-container">
                 <h1>Onde quer ser recomendado?</h1>
 
-                <div class="streaming-content-container">
-                    <ul class="streamingapps-list">
-                        <li><img src="./assets/streaming-apps/logo-netflix.png" alt="Logo da Netflix"></li>
-                        <li><img src="./assets/streaming-apps/logo-hbo-max.png" alt="Logo do HBO Max"></li>
-                        <li><img src="./assets/streaming-apps/logo-disney-plus.png" alt="Logo do Disney Plus"></li>
-                        <li><img src="./assets/streaming-apps/logo-prime-video.png" alt="Logo da Prime Video"></li>
-                    </ul>
-                    <small>*Estes são serviços de entretenimento oficiais e pagos. Demais serviços considerados “piratas” não serão divulgados em nossa plataforma.</small>
-                </div>
+                <picture class="streaming-apps-list">
+                    <img src="./assets/streaming-apps/logo-netflix.png" alt="Logo da Netflix">
+                    <img src="./assets/streaming-apps/logo-hbo-max.png" alt="Logo do HBO Max">
+                    <img src="./assets/streaming-apps/logo-disney-plus.png" alt="Logo do Disney Plus">
+                    <img src="./assets/streaming-apps/logo-prime-video.png" alt="Logo da Prime Video">
+                </picture>
+
+                <small>*Escolha um dos serviços.</small>
             </div>
 
             <div class="streamapp-bottom-side-container">
-                <button class="to-age-ratings-btn" type="button">
+                <button class="section-navigator-button" id="to-age-ratings-btn" type="button">
                     <img src="assets/ratings/rating-livre-32.png" alt="Ícone de Classificação Indicativa Livre">
                     Próximo
                 </button>
@@ -142,27 +141,29 @@
             <aside>
                 <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="Seta para cima para ir ao início">
             </aside>
-            
-            <h1>Qual sua faixa etária?</h1>
+        
+            <div class="ratings-top-side-container">
+                <h1>Qual sua faixa etária?</h1>
 
-            <div>
-                <ul class="ratings-list">
-                    <li><img src="./assets/ratings/rating-livre.png" alt="Ícone de Classificação Indicativa para todos os públicos"></li>
-                    <li><img src="./assets/ratings/rating-10anos.png" alt="Ícone de Classificação Indicativa para maiores de 10 anos"></li>
-                    <li><img src="./assets/ratings/rating-12anos.png" alt="Ícone de Classificação Indicativa para maiores de 12 anos"></li>
-                    <li><img src="./assets/ratings/rating-16anos.png" alt="Ícone de Classificação Indicativa para maiores de 16 anos"></li>
-                    <li><img src="./assets/ratings/rating-18anos.png" alt="Ícone de Classificação Indicativa para maiores de 18 anos"></li>
-                </ul>
-
-                <small>Ao continuar declaro que estou ciente de que tenho a idade escolhida ou superior à ela, e que<br>qualquer conteúdo indesejado visto é de minha responsabilidade.</small>
+                <picture class="ratings-list">
+                    <img src="./assets/ratings/rating-livre.png" alt="Ícone de Classificação Indicativa para todos os públicos">
+                    <img src="./assets/ratings/rating-10anos.png" alt="Ícone de Classificação Indicativa para maiores de 10 anos">
+                    <img src="./assets/ratings/rating-12anos.png" alt="Ícone de Classificação Indicativa para maiores de 12 anos">
+                    <img src="./assets/ratings/rating-16anos.png" alt="Ícone de Classificação Indicativa para maiores de 16 anos">
+                    <img src="./assets/ratings/rating-18anos.png" alt="Ícone de Classificação Indicativa para maiores de 18 anos">
+                </picture>
+                
+                <small>Ao continuar você declara que está ciente sobre idades falsas e o conteúdo adulto indevido.</small>
             </div>
 
-            <button class="to-recommendations-section-btn" type="button">
-                <img src="assets/svg-icons/cards.svg" alt="Ícone de cartões, referente á próxima seção de recomendações de filmes">
-                <p>Ver recomendações</p>
-            </button>
-
-            <small>Ver as sugestões disponíveis</small>
+            <div class="ratings-bottom-side-container">
+                <button class="section-navigator-button" id="to-recommendations-section-btn" type="button">
+                    <img src="assets/svg-icons/cards.svg" alt="Ícone de cartões, referente á próxima seção de recomendações de filmes">
+                    Próximo
+                </button>
+    
+                <small>Ver sugestões disponíveis</small>
+            </div>
         </section>
 
         <section class="mofinder-recommending" id="section5">
@@ -170,7 +171,7 @@
                 <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="Seta para cima para ir ao início">
             </aside>
             
-            <h1 class="reccomendation-title">{nome_do_filme}</h1>
+            <h1 class="recomendation-title">{nome_do_filme}</h1>
 
             <div class="recomendation-app">
                 <div class="dynamic-cards-preview">
@@ -234,5 +235,7 @@
             </aside>
         </section>
     </main>
+
+    <script src="scripts/app.js"></script>
 </body>
 </html>
