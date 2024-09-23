@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./styles/styles.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="./styles/styles.css" media="screen">
     <!--<link rel="stylesheet" href="./styles/header.css" media="screen">/!-->
     <!--<link rel="stylesheet" href="./styles/sections.css" media="screen">/!-->
     <!--<link rel="stylesheet" href="./styles/mobile-query.css" media="screen and (max-width: 768px)">/!-->
@@ -166,70 +166,66 @@
             </div>
         </section>
 
-        <section class="mofinder-recommending" id="section5">
-            <aside>
-                <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="Seta para cima para ir ao início">
-            </aside>
-            
-            <h1 class="recomendation-title">{nome_do_filme}</h1>
-
+        <section class="mofinder-section-recommending" id="section5">
             <div class="recomendation-app">
-                <div class="dynamic-cards-preview">
-                    <div class="dynamic-card" id="card-1"></div>
-                    <div class="dynamic-card" id="card-2"></div>
-                    <div class="dynamic-card" id="recommendation-card">
-                        <small>Lançamento em: 03/11/2020</small>
+                <div class="recommendation-preview-container">
+                    <h1 class="recomendation-title">Lorem Ipsum</h1>
+
+                    <div class="dynamic-cards-preview">
+                        <div class="dynamic-card" id="card-1"></div>
+                        <div class="dynamic-card" id="card-2"></div>
+                        <div class="dynamic-card" id="card-main"><small>Lançamento em --/--/----</small></div>
                     </div>
                 </div>
 
-                <article>
-                    <div>
-                        <h3>Sobre esta recomendação:</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, eius nemo illo fuga quae distinctio ratione culpa impedit perferendis magnam. Voluptates reprehenderit aut saepe architecto odio minima modi laborum delectus.</p>
-                    </div>
-                
-                    <aside>
-                        <h3>Informações:</h3>
+                <article class="detailed-info-container">
+                    <h3>Informações:</h3>
+                    
+                    <ul class="detailed-infos-list">
+                        <li id="rating">
+                            <img src="./assets/ratings/rating-livre-32.png" alt="Classificação Indicativa Livre">
+                        </li>
                         
-                        <ul class="recommendation-infos">
-                            <li id="rating"><img src="./assets/ratings/rating-livre-56.png" alt="Classificação Indicativa Livre"></li>
-                            
-                            <li id="type">
-                                <img src="./assets/svg-icons/monitor.svg" alt="Ícone de monitor de computador, referente ao tipo Série">
-                                <p>Série</p>
-                            </li>
-    
-                            <li id="seasons-or-sequence">
-                                <img src="./assets/svg-icons/cards-three.svg" alt="Ícone de cartões em ordem crescente, referente às temporadas da Série">
-                                <p>2 Temporadas</p>
-                            </li>
-    
-                            <li id="duration">
-                                <img src="./assets/svg-icons/clock.svg" alt="Ícone de relógio, referente a duração do filme ou duração total da Série">
-                                <p>2h</p>
-                            </li>
-    
-                            <li id="category">
-                                <img src="./assets/svg-icons/mountains.svg" alt="Ícone de montanhas, referente a categoria do Filme ou Série">
-                                <p>Aventura</p>
-                            </li>
-                        </ul>
-                    </aside>
+                        <li id="type">
+                            <img src="./assets/svg-icons/monitor.svg" alt="Ícone de monitor de computador, referente ao tipo Série">
+                            <p>Série/Filme</p>
+                        </li>
+
+                        <li id="seasons-or-sequence">
+                            <img src="./assets/svg-icons/cards-three.svg" alt="Ícone de cartões em ordem crescente, referente às temporadas da Série">
+                            <p>- Temporadas</p>
+                        </li>
+
+                        <li id="duration">
+                            <img src="./assets/svg-icons/clock.svg" alt="Ícone de relógio, referente a duração do filme ou duração total da Série">
+                            <p>-h</p>
+                        </li>
+
+                        <li id="category">
+                            <img src="./assets/svg-icons/mountains.svg" alt="Ícone de montanhas, referente a categoria do Filme ou Série">
+                            <p>Categoria</p>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="about-recommendation-container">
+                    <h3>Descrição:</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni blanditiis quae iure asperiores architecto dicta unde! Nisi, porro provident eum sint incidunt molestias necessitatibus eveniet itaque quibusdam ullam sit harum!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, eius nemo illo fuga quae distinctio ratione culpa impedit perferendis magnam.</p>
                 </article>
             </div>
 
-            <aside class="user-recommendation-rate">
-                <h3>O que achou desta recomendação?</h3>
+            <aside class="user-rating-container">
+                <p>O que achou disso?</p>
 
-                <div class="user-choices-container">
-                    <button id="like-it" type="button">
+                <div class="user-rating-btns-container">
+                    <button class="user-rating-btn" id="like-it" type="button">
                         <img src="assets/svg-icons/thumbs-up.svg" alt="Ícone de like ou polegar informando positivamente">
-                        <p>Gostei disso.</p>
+                        <p>Interessante!</p>
                     </button>
 
-                    <button id="dislike-it" type="button">
+                    <button class="user-rating-btn" id="dislike-it" type="button">
                         <img src="assets/svg-icons/thumbs-down.svg" alt="Ícone de deslike ou polegar informando negativamente">
-                        <p>Não gostei.</p>
+                        <p>Não curti.</p>
                     </button>
                 </div>
             </aside>

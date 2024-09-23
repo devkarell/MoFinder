@@ -63,35 +63,3 @@ header > nav { display: none; }
     font-size: clamp(.7em, 1vw, 2em);
 }
 */
-
-main {
-    width: 100%;
-}
-
-section {
-    height: 100vh;
-    margin: 0px;
-    padding-inline: 5%;
-    padding-block: 0px;
-}
-
-.mofinder-section-home {
-    height: 84vh;
-    padding-block: 20%;
-}
-
-.mofinder-section-home > div {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    text-wrap: wrap;
-    width: 100%;
-    height: 100%;
-}
-
-.mofinder-section-checkup {
-    text-wrap: wrap;
-    padding-block: 10%;
-}
