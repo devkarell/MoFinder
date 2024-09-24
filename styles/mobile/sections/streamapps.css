@@ -1,0 +1,37 @@
+.mofinder-section-streamapp {
+    justify-content: space-between;
+}
+
+.streamapp-top-side-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.streamapp-top-side-container p {
+    font-size: .9em;
+    text-wrap: pretty;
+}
+
+.streamapp-top-side-container .streaming-apps-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    width: 100%;
+    padding-top: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.streaming-apps-list img {
+    width: 6em;
+    height: auto;
+    scroll-snap-align: start;
+}
+
+.streaming-apps-list img:hover {
+    animation: btn-click-anim .5s ease-out infinite;
+}

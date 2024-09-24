@@ -1,0 +1,215 @@
+.recomendation-app {
+    text-align: start;
+}
+
+.recomendation-app .recommendation-preview-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.recommendation-preview-container .recomendation-title {
+    text-align: start;
+    width: 100%;
+    font-weight: 700;
+    padding-left: 10px;
+    font-size: 1.5em;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border-left: 5px solid var(--hover-btn-color);
+}
+
+.recommendation-preview-container .dynamic-cards-preview {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 95%;
+    height: 11em;
+    z-index: -1;
+}
+
+.dynamic-cards-preview .dynamic-card {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+
+    background-color: var(--dynamic-card-color);
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px var(--dynamic-card-shadow-color);
+}
+
+.dynamic-cards-preview #card-1 {
+    width: 90%;
+    top: 0px;
+}
+
+.dynamic-cards-preview #card-2 {
+    width: 95%;
+    top: 10px;
+}
+
+.dynamic-cards-preview #card-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+
+    top: 20px;
+    background-image: linear-gradient(to top, var(--dynamic-card-shadow-color), transparent);   
+}
+
+.dynamic-cards-preview #card-main small {
+    margin-block: 0px .5em;
+}
+
+.recomendation-app .detailed-info-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 4.5em;
+    margin-block: 1em;
+    
+    text-align: start;
+}
+
+.detailed-info-container h3 {
+    padding-left: 5px;
+    border-left: 5px solid var(--hover-btn-color);
+}
+
+.detailed-info-container .detailed-infos-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .4rem;
+    width: 100%;
+    height: 2rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+.detailed-infos-list li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 2rem;
+    gap: 5px;
+    padding: .2rem .5rem;
+    color: white;
+    scroll-snap-align: start;
+
+    border-radius: 5px;
+    border: 1px solid var(--small-letters-color);
+    background-color: var(--dynamic-card-color);
+}
+
+.detailed-infos-list li p {
+    font-size: .7em;
+    margin: 0px;
+    text-wrap: nowrap;
+    color: white;
+}
+
+.detailed-infos-list li img {
+    width: 1.5em;
+    height: auto;
+}
+
+.detailed-infos-list #rating {
+    padding: 0px;
+    gap: 0px;
+    background-color: unset;
+    border: unset;
+}
+
+.detailed-infos-list #rating img {
+    width: 2em;
+}
+
+.about-recommendation-container {
+    margin-bottom: 1em;
+}
+
+.about-recommendation-container h3 {
+    padding-left: 5px;
+    border-left: 5px solid var(--hover-btn-color);
+}
+
+.about-recommendation-container p {
+    font-size: .8em;
+    text-wrap: pretty;
+    text-align: start;
+    margin-bottom: 0px;
+    height: 5em;
+    overflow-y: auto;
+}
+
+.user-rating-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: unset;
+}
+
+.user-rating-container p {
+    font-weight: 400;
+    font-size: .9em;
+    color: var(--small-letters-color);
+}
+
+.user-rating-container .user-rating-btns-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.user-rating-btns-container .user-rating-btn {
+    all: unset;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: .3em .8em;
+
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.user-rating-btn img {
+    display: block;
+    width: 1.5em;
+    height: auto;
+}
+
+.user-rating-btn p {
+    font-weight: 200;
+    font-size: .8em;
+    margin: 0px;
+    color: white;
+}
+
+.user-rating-btns-container #like-it:active {
+    animation: user-positive-rated-animation .2s ease-out;
+}
+
+.user-rating-btns-container #dislike-it:active {
+    animation: user-negative-rated-animation .2s ease-out;
+}

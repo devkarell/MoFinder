@@ -1,0 +1,80 @@
+<details class="steps-toggle" id="all-steps-toggle">
+                    <summary>Veja o passo-passo da experiência</summary>
+    
+                    <details class="steps-toggle" id="step-one-toggle">
+                        <summary>Prevenção de conteúdo indesejado</summary>
+    
+                        <fieldset class="steps-fieldset" id="step-one-fieldset">
+                            <legend>Fluxo do usuário</legend>
+                            <p>Algumas perguntas básicas sobre o serviço de streaming favorito e a classificação indicativa serão feitas, isto serve para previnirmos que o usuário receba recomendações de plataforma que não possua o acesso, ou, que tenha problemas com conteúdo indesejado.</p>
+                        </fieldset>
+                    </details>
+    
+                    <details class="steps-toggle" id="step-two-toggle">
+                        <summary>Entenda o algorítmo</summary>
+    
+                        <fieldset class="steps-fieldset" id="step-two-fieldset">
+                            <legend>O Algorítmo</legend>
+                            <p>Por meio de “Gostei” ou “Não gostei”, o algoritmo irá escolher as melhores sugestões com base em seu interesse.<br><br>Serão 5 recomendações dinâmicas, e cada filme/série recomendado terá explicíto suas informações para que a experiência do usuário seja eficaz.</p>
+                        </fieldset>
+                    </details>
+                </details>
+
+                .checkup-top-side-container #all-steps-toggle {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1em;
+    overflow-y: auto;
+    width: 90%;
+
+    color: var(--small-letters-color);
+}
+
+.steps-fieldset {
+    width: 90%;
+    margin-block: .5em 1em;
+    margin-inline: auto;
+    padding: 1em .5em .2em;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.steps-fieldset legend {
+    color: rgb(222, 222, 222);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.steps-fieldset p {
+    font-size: .9em;
+    text-align: justify;
+    font-weight: 200;
+}
+
+#all-steps-toggle summary {
+    font-size: 1em;
+}
+
+#step-one-toggle {
+    color: white;
+    margin-top: .5em;
+}
+
+#step-one-toggle summary {
+    font-size: .8em;
+    text-wrap: wrap;
+    line-break: anywhere;
+}
+
+#step-two-toggle {
+    color: white;
+}
+
+#step-two-toggle summary {
+    font-size: .8em;
+    text-wrap: wrap;
+    line-break: anywhere;
+}

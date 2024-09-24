@@ -1,0 +1,12 @@
+.mofinder-section-checkup {
+    justify-content: space-between;
+}
+
+.checkup-top-side-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: hidden;
+    margin-bottom: 1em;
+}
