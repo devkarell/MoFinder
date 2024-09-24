@@ -1,0 +1,92 @@
+body .hamburguer-dynamic-shadow {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: var(--dynamic-bg-color);
+    display: none;
+}
+
+body .hamburguer-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    bottom: 20px;
+    right: 20px;
+    width: 3rem;
+    height: 3rem;
+    padding: .5rem;
+
+    border-radius: 20%;
+    border: 1px solid white;
+    background-color: var(--main-bg-color);
+    box-shadow: 0px 0px 20px var(--box-shadow-color);
+}
+
+.hamburguer-container #hamburguer-links-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 100%;
+    right: 0px;
+    margin-bottom: 25px;
+    width: 300%;
+
+    text-align: end;
+    display: none;
+}
+
+.hamburguer-container #hamburguer-links-container #external-links {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hamburguer-container #hamburguer-links-container nav a {
+    display: block;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.hamburguer-container #hamburguer-links-container nav #contact {
+    margin-bottom: 20px;
+}
+
+.hamburguer-container #hamburguer-links-container nav .external-link {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0px 5px;
+}
+
+.hamburguer-container #hamburguer-links-container nav #site {
+    background-image: url("../../../assets/svg-icons/link.svg");
+}
+
+.hamburguer-container #hamburguer-links-container nav #linkedin {
+    background-image: url("../../../assets/svg-icons/linkedin-logo.svg");
+}
+
+.hamburguer-container #hamburguer-links-container nav #github {
+    background-image: url("../../../assets/svg-icons/github-logo.svg");
+}
+
+.hamburguer-container #hamburguer-links-container nav a[href="#"] {
+    color: var(--small-letters-color);
+    cursor: default;
+}
+
+#hamburguer-toggle {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
