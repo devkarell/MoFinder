@@ -1,0 +1,26 @@
+.mofinder-section-loading .loading-center-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.loading-center-container .tmdb-logo {
+    width: 50%;
+}
+
+.loading-status {
+    margin: 0px;
+    text-align: center;
+    color: #404040;
+}
+
+.loading-status-true {
+    color: #87d97d;
+}
+
+.loading-status-current {
+    color: #8a8a8a;
+}
