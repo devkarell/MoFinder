@@ -15,3 +15,13 @@ sectionNavigatorButtons.forEach(navigator => {
         newSection.scrollIntoView({behavior: 'smooth'});
     });
 });
+
+// function ajustarAlturaSecao() {
+//     const alturaViewport = window.innerHeight;
+//     document.querySelectorAll('section').forEach(section => {
+//         section.style.height = `${alturaViewport}px`;
+//     });
+// };
+  
+// window.addEventListener('resize', ajustarAlturaSecao);
+// ajustarAlturaSecao();
