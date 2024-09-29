@@ -1,27 +1,27 @@
+const mofinderSections = document.querySelectorAll(".mofinder-section");
 const sectionNavigatorButtons = document.querySelectorAll('.section-navigator-button');
+//const debugTitle = document.querySelector(".a");
 
-sectionNavigatorButtons.forEach(navigator => {
-    navigator.addEventListener('click', function() {
-        let navigatorSection;
-        
-        if (navigator.parentElement.id) {
-            navigatorSection = navigator.parentElement.id;
-        } else {
-            navigatorSection = navigator.parentElement.parentElement.id;
-        }
+async function scrollToSection(sectionId) {
+    const newSection = document.getElementById(sectionId);
 
-        const sectionID = Number(navigatorSection.match(/\d+/));
-        const newSection = document.getElementById(`section${sectionID + 1}`);
-        newSection.scrollIntoView({behavior: 'smooth'});
+    if (newSection) {
+        setTimeout(() => {
+            newSection.scrollIntoView({behavior: 'smooth'})
+        }, 150)
+    };
+};
+
+function adjustSectionWithinToolBar() {
+    const visibleArea = window.innerHeight;
+    const newAdaptedSectionSize = `${visibleArea - ((visibleArea * 8) / 100)}px`;
+    
+    mofinderSections.forEach(section => {
+        section.style.height = newAdaptedSectionSize
     });
-});
 
-// function ajustarAlturaSecao() {
-//     const alturaViewport = window.innerHeight;
-//     document.querySelectorAll('section').forEach(section => {
-//         section.style.height = `${alturaViewport}px`;
-//     });
-// };
-  
-// window.addEventListener('resize', ajustarAlturaSecao);
-// ajustarAlturaSecao();
+    //debugTitle.textContent = `Visible: ${visibleArea}px | Section: ${newAdaptedSectionSize}`;
+};
+
+adjustSectionWithinToolBar();
+window.addEventListener('resize', adjustSectionWithinToolBar);

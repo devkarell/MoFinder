@@ -48,22 +48,24 @@
                 <li><a class="external-link" href="https://github.com/kareu-uu/MoFinder" target="_blank"><img src="./assets/svg-icons/github-logo.svg" alt="Clique para acessar meu GitHub"></a></li>
             </ul>
         </nav>
+
+        <!-- <p class="a">Altura: 0px</p> </!-->
     </header>
 
     <main>
-        <section class="mofinder-section-home" id="section1">
+        <section class="mofinder-section-home mofinder-section" id="section1">
             <div class="labels-container">
                 <h1>Escolher o<br>filme perfeito<br>não precisa ser difícil.</h1>
                 <p>Veja recomendações inteligentes de filmes/séries de forma dinâmica, nada de grande catálogos!</p>
             </div>
             
-            <button class="section-navigator-button" id="start-tour-btn" type="button">
+            <button class="section-navigator-button" id="start-tour-btn" type="button" onclick="scrollToSection('section2')">
                 <img src="assets/svg-icons/queue.svg" alt="Começar o tour">
                 Mostre-me!
             </button>
         </section>
 
-        <section class="mofinder-section-checkup" id="section2">
+        <section class="mofinder-section-checkup mofinder-section" id="section2">
             <aside>
                 <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="Seta para cima para ir ao início">
             </aside>
@@ -76,7 +78,7 @@
             <p>Se estiver com dúvidas, acesse <strong>Como usar</strong> e saiba mais.</p>
 
             <div class="checkup-bottom-side-container">
-                <button class="section-navigator-button" id="start-aplication-btn" type="button">
+                <button class="section-navigator-button" id="start-aplication-btn" type="button" onclick="scrollToSection('section3')">
                     <img src="assets/svg-icons/play.svg" alt="Ícone de começar, se refere para iniciar a experiência">
                     Começar!
                 </button>
@@ -85,7 +87,7 @@
             </div>
         </section>
 
-        <section class="mofinder-section-streamapp" id="section3">
+        <section class="mofinder-section-streamapp mofinder-section" id="section3">
             <aside>
                 <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="Seta para cima para ir ao início">
                 <small><strong>Etapa 1:</strong> Escolha uma das opções abaixo</small>
@@ -106,7 +108,7 @@
             </div>
 
             <div class="streamapp-bottom-side-container">
-                <button class="section-navigator-button" id="to-age-ratings-btn" type="button">
+                <button class="section-navigator-button" id="to-age-ratings-btn" type="button" onclick="scrollToSection('section4')">
                     <img src="assets/ratings/rating-livre-32.png" alt="Ícone de Classificação Indicativa Livre">
                     Próximo
                 </button>
@@ -115,7 +117,7 @@
             </div>
         </section>
 
-        <section class="mofinder-section-ratings" id="section4">
+        <section class="mofinder-section-ratings mofinder-section" id="section4">
             <aside>
                 <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="Seta para cima para ir ao início">
                 <small><strong>Etapa 2:</strong> Escolha uma das opções abaixo</small>
@@ -137,7 +139,7 @@
             </div>
 
             <div class="ratings-bottom-side-container">
-                <button class="section-navigator-button" id="to-recommendations-section-btn" type="button">
+                <button class="section-navigator-button" id="to-recommendations-section-btn" type="button" onclick="scrollToSection('section5')">
                     <img src="assets/svg-icons/cards.svg" alt="Ícone de cartões, referente á próxima seção de recomendações de filmes">
                     Próximo
                 </button>
@@ -146,7 +148,7 @@
             </div>
         </section>
 
-        <section class="mofinder-section-loading" id="section5">
+        <section class="mofinder-section-loading mofinder-section" id="section5">
             <aside>
                 <small><strong>Carregando:</strong> Preparando a recomendação..</small>
             </aside>
@@ -164,7 +166,7 @@
             <small>Este serviço usa TMDB e as APIs TMDB, mas não é endossado, certificado ou aprovado de outra forma pela TMDB.</small>
         </section>
 
-        <section class="mofinder-section-recommending" id="section6">
+        <section class="mofinder-section-recommending mofinder-section" id="section6">
             <div class="recomendation-app">
                 <div class="dynamic-cards-preview">
                     <div class="dynamic-card" id="card-1"></div>

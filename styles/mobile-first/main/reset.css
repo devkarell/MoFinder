@@ -32,12 +32,15 @@ main section {
     align-content: center;
     text-align: center;
     width: 100%;
-    height: 92vh;
     padding-block: 2em;
-    margin-bottom: 11.52vh;
+    margin-bottom: 8vh;
     scroll-margin-top: 8vh;
-    border: 2px dotted red;
 }
+
+/*.a {
+    position: absolute;
+    top: 8vh;
+}*/
 
 #section6 {
     margin: 0px;
