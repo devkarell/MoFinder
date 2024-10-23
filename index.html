@@ -53,7 +53,7 @@
     </header>
 
     <main>
-        <section class="mofinder-section-home mofinder-section" id="section1">
+        <section class="mofinder-section home" id="section1">
             <div class="labels-container">
                 <h1>Escolher o<br>filme perfeito<br>não precisa ser difícil.</h1>
                 <p>Veja recomendações inteligentes de filmes/séries de forma dinâmica, nada de grande catálogos!</p>
@@ -65,7 +65,7 @@
             </button>
         </section>
 
-        <section class="mofinder-section-checkup mofinder-section" id="section2">
+        <section class="mofinder-section checkup" id="section2">
             <aside>
                 <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="Seta para cima para ir ao início">
             </aside>
@@ -87,7 +87,7 @@
             </div>
         </section>
 
-        <section class="mofinder-section-streamapp mofinder-section" id="section3">
+        <section class="mofinder-section streamapp" id="section3">
             <aside>
                 <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="Seta para cima para ir ao início">
                 <small><strong>Etapa 1:</strong> Escolha uma das opções abaixo</small>
@@ -117,7 +117,7 @@
             </div>
         </section>
 
-        <section class="mofinder-section-ratings mofinder-section" id="section4">
+        <section class="mofinder-section ratings" id="section4">
             <aside>
                 <img class="caret-navigator" src="assets/svg-icons/caret-up.svg" alt="Seta para cima para ir ao início">
                 <small><strong>Etapa 2:</strong> Escolha uma das opções abaixo</small>
@@ -148,7 +148,7 @@
             </div>
         </section>
 
-        <section class="mofinder-section-loading mofinder-section" id="section5">
+        <section class="mofinder-section loading" id="section5">
             <aside>
                 <small><strong>Carregando:</strong> Preparando a recomendação..</small>
             </aside>
@@ -166,68 +166,25 @@
             <small>Este serviço usa TMDB e as APIs TMDB, mas não é endossado, certificado ou aprovado de outra forma pela TMDB.</small>
         </section>
 
-        <section class="mofinder-section-recommending mofinder-section" id="section6">
-            <div class="recomendation-app">
-                <div class="dynamic-cards-preview">
-                    <div class="dynamic-card" id="card-1"></div>
-                    <div class="dynamic-card" id="card-2"></div>
-                    <div class="dynamic-card" id="card-main">
-                        <h1 class="recomendation-title">Lorem Ipsum</h1>
-                        <small>Lançamento em --/--/----</small>
-                    </div>
-                </div>
+        <section class="mofinder-section started" id="section6">
+            <img src="./assets/svg-icons/hand-withdraw.svg" alt="">
 
-                <article class="detailed-info-container">
-                    <h3>Informações:</h3>
-                    
-                    <ul class="detailed-infos-list">
-                        <li id="rating">
-                            <img src="./assets/ratings/rating-livre-56.png" alt="Classificação Indicativa Livre">
-                        </li>
-                        
-                        <li id="type">
-                            <img src="./assets/svg-icons/monitor.svg" alt="Ícone de monitor de computador, referente ao tipo Série">
-                            <p>Série/Filme</p>
-                        </li>
+            <h3>Esta é sua primeira recomendação..</h3>
+            <p>Tentamos disponibilizar todas as informações possíveis para você, sinta-se livre e encontre o veredito final!</p>
+            <small>
+                <strong>Restam 5 avaliações para o resultado</strong>
+            </small>
+        </section>
 
-                        <li id="seasons-or-sequence">
-                            <img src="./assets/svg-icons/cards-three.svg" alt="Ícone de cartões em ordem crescente, referente às temporadas da Série">
-                            <p>- Temporadas</p>
-                        </li>
-
-                        <li id="duration">
-                            <img src="./assets/svg-icons/clock.svg" alt="Ícone de relógio, referente a duração do filme ou duração total da Série">
-                            <p>-h</p>
-                        </li>
-
-                        <li id="category">
-                            <img src="./assets/svg-icons/mountains.svg" alt="Ícone de montanhas, referente a categoria do Filme ou Série">
-                            <p>Categoria</p>
-                        </li>
-                    </ul>
-                </article>
-
-                <article class="about-recommendation-container">
-                    <h3>Descrição:</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni blanditiis quae iure asperiores architecto dicta unde! Nisi, porro provident eum sint incidunt molestias necessitatibus eveniet itaque quibusdam ullam sit harum!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, eius nemo illo fuga quae distinctio ratione culpa impedit perferendis magnam.</p>
-                </article>
+        <section class="mofinder-section recommendation" id="section7">
+            <div class="cards-container">
+                <div class="card"></div>
+                <div class="card" id="main-card"></div>
+                <div class="card"></div>
             </div>
 
-            <aside class="user-rating-container">
-                <p>O que achou disso?</p>
-
-                <div class="user-rating-btns-container">
-                    <button class="user-rating-btn" id="like-it" type="button">
-                        <img src="assets/svg-icons/thumbs-up.svg" alt="Ícone de like ou polegar informando positivamente">
-                        <p>Interessante!</p>
-                    </button>
-
-                    <button class="user-rating-btn" id="dislike-it" type="button">
-                        <img src="assets/svg-icons/thumbs-down.svg" alt="Ícone de deslike ou polegar informando negativamente">
-                        <p>Não curti.</p>
-                    </button>
-                </div>
-            </aside>
+            <div class="movie-infos-container"></div>
+            <div class="user-rating-container"></div>
         </section>
     </main>
 

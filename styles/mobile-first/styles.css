@@ -11,7 +11,7 @@
 @import "./sections/checkup.css";
 @import "./sections/streamapps.css";
 @import "./sections/ratings.css";
-@import "./sections/recommendationapp.css";
+@import "./sections/recommendation.css";
 
 :root {
     --main-bg-color: #1b1b1b;

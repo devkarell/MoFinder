@@ -1,9 +1,9 @@
-.mofinder-section-home .labels-container h1 {
+.home .labels-container h1 {
     text-align: start;
     text-wrap: nowrap;
 }
 
-.mofinder-section-home .labels-container p {
+.home .labels-container p {
     text-align: start;
     text-wrap: pretty;
 }

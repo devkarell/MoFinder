@@ -1,4 +1,4 @@
-.mofinder-section-loading .loading-center-container {
+.loading .loading-center-container {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
