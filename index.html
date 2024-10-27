@@ -167,24 +167,144 @@
         </section>
 
         <section class="mofinder-section started" id="section6">
-            <img src="./assets/svg-icons/hand-withdraw.svg" alt="">
+            <div class="top-container">
+                <img src="./assets/svg-icons/hand-withdraw.svg" alt="">
+                <h3>Esta é sua primeira recomendação..</h3>
+                <p>Tentamos disponibilizar todas as informações possíveis para você, sinta-se livre e encontre o veredito final!</p>
+            </div>
 
-            <h3>Esta é sua primeira recomendação..</h3>
-            <p>Tentamos disponibilizar todas as informações possíveis para você, sinta-se livre e encontre o veredito final!</p>
-            <small>
-                <strong>Restam 5 avaliações para o resultado</strong>
-            </small>
+            <small>Restam 5 avaliações para o resultado</small>
         </section>
 
         <section class="mofinder-section recommendation" id="section7">
             <div class="cards-container">
-                <div class="card"></div>
-                <div class="card" id="main-card"></div>
-                <div class="card"></div>
+                <div class="card" id="left-card"></div>
+                
+                <div class="card" id="main-card">
+                    <h3 class="movie-name">Título do filme em 47 dígitos..</h3>
+                    <small class="movie-langs">Disponível em Português, Inglês, EUR..</small>
+                </div>
+
+                <div class="card" id="right-card"></div>
             </div>
 
-            <div class="movie-infos-container"></div>
-            <div class="user-rating-container"></div>
+            <div class="movie-infos-container">
+                <div class="movie-basic-infos">
+                    <div class="rating-info">
+                        <img src="./assets/ratings/rating-livre-32.png" alt="">
+                        <p>Livre</p>
+                    </div>
+    
+                    <div class="type-info">
+                        <img src="./assets/svg-icons/monitor.svg" alt="">
+                        <p>Série</p>
+                    </div>
+    
+                    <div class="release-date-info">
+                        <img src="./assets/svg-icons/calendar.svg" alt="">
+                        <p>2024</p>
+                    </div>
+    
+                    <div class="users-rating-info">
+                        <img src="./assets/svg-icons/star.svg" alt="">
+                        <p>4.9+</p>
+                    </div>
+                </div>
+                
+                <div class="advanced-infos-layout">
+                    <div class="main-page">
+                        <div class="left-side">
+                            <div class="categories">
+                                <h3>Categorias</h3>
+                                <p>Ação, Comédia & Aventura</p>
+                            </div>
+
+                            <div class="timings">
+                                <h3>Duração total</h3>
+                                <div class="timing-info">
+                                    <img src="./assets/svg-icons/cards.svg" alt="">
+                                    <p>18 Temporadas</p>
+                                </div>
+                                <div class="timing-info">
+                                    <img src="./assets/svg-icons/cards-three.svg" alt="">
+                                    <p>78 Episódios</p>
+                                </div>
+                                <div class="timing-info">
+                                    <img src="./assets/svg-icons/clock.svg" alt="">
+                                    <p>298h</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="streamapps">
+                            <h3>Onde assistir</h3>
+
+                            <div class="icons-grid">
+                                <img class="streamapp-icon" src="./assets/streaming-apps/logo-netflix.png" alt="">
+                                <img class="streamapp-icon" src="./assets/streaming-apps/logo-hbo-max.png" alt="">
+                                <img class="streamapp-icon" src="./assets/streaming-apps/logo-disney-plus.png" alt="">
+                                <div class="streamapp-more">
+                                    <p>+2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ia-description-page">
+                        <h3>Descrição por IA</h3>
+                        <button>
+                            <p>Gerar</p>
+                            <img src="./assets/svg-icons/sparkles.svg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="elenco-page">
+                        <h3>Elenco Principal</h3>
+
+                        <ul class="authors-list">
+                            <li class="author-name">
+                                <p>Jane Smith</p>
+                                <span>(Protagonista)</span>
+                            </li>
+
+                            <li class="author-name">
+                                <p>Michael Johnson</p>
+                                <span>(Co-Protagonista/Antagonista)</span>
+                            </li>
+
+                            <li class="author-name">
+                                <p>Emily Davis</p>
+                                <span>(Apoio/Destaque)</span>
+                            </li>
+
+                            <li class="author-name">
+                                <p>John Doe</p>
+                                <span>(Apoio)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="nav-dots">
+                    <div class="dot current"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+
+            <div class="user-rating-container">
+                <h3><span>(1 de 5)</span> Que tal este?</h3>
+
+                <div class="rating-buttons-container">
+                    <button class="rate-negative">
+                        <img src="./assets/svg-icons/thumbs-down.svg" alt="">
+                    </button>
+
+                    <button class="rate-positive">
+                        <img src="./assets/svg-icons/thumbs-up.svg" alt="">
+                    </button>
+                </div>
+            </div>
         </section>
     </main>
 

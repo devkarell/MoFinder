@@ -1,0 +1,13 @@
+.started .top-container img {
+    width: 128px;
+    margin-bottom: 2em;
+}
+
+.started .top-container h3 {
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+
+.started small {
+    font-weight: 500;
+}
